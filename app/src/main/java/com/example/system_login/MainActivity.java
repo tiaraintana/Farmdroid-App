@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                     .setNegativeButton("Retry", null).create().show();
         }
         else {
-            Intent intent = new Intent(MainActivity.this, Menu.class);
+            Intent intent = new Intent(MainActivity.this, MenuAfterLogin.class);
             startActivity(intent);
         }
     }
