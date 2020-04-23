@@ -1,5 +1,5 @@
 tugas besar pemrograman mobile :
 membuat sebuah aplikasi yang berbasis android dimana didalamnya terdapat berbagai fitur
-1.
-2.
-3.
+1. konsultasi
+2. news
+3. 
