@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../System_Login.iml" filepath="$PROJECT_DIR$/../System_Login.iml" group="System_Login" />
+      <module fileurl="file://$PROJECT_DIR$/../Tubes_Mobile-System_Login.iml" filepath="$PROJECT_DIR$/../Tubes_Mobile-System_Login.iml" group="System_Login" />
+      <module fileurl="file://$PROJECT_DIR$/Tubes_Mobile-app.iml" filepath="$PROJECT_DIR$/Tubes_Mobile-app.iml" group="System_Login/app" />
       <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="System_Login/app" />
     </modules>
   </component>
