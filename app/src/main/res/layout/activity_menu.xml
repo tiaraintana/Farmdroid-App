@@ -6,7 +6,6 @@
     android:background="@drawable/login_potrait"
     tools:context=".Menu">
 
-
         <ImageView
             android:id="@+id/iki_tentang"
             android:layout_width="222dp"

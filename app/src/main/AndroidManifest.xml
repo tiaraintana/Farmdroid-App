@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MenuAfterLogin"></activity>
-        <activity android:name=".PengendalianTungro" />
+        <activity android:name=".PengendalianTungro"></activity>
         <activity android:name=".PengendalianBusukpelepah" />
         <activity android:name=".PengendalianBusukbatang" />
         <activity android:name=".PengendalianBercak" />
