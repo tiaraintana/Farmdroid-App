@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/animation_list"
     android:gravity="center_vertical"
     android:orientation="vertical"
     tools:context=".RegistrasiActivity">
@@ -12,8 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sigh Up Here"
+        android:background="@color/colorPrimaryDark"
         android:textSize="20sp"
-        android:textColor="#000"
+        android:padding="30dp"
+        android:textColor="#ffff"
         android:textStyle="bold"
         android:textAlignment="center"
         android:gravity="center_horizontal" />
@@ -49,31 +50,18 @@
         android:hint="Input Email"
         android:inputType="textEmailAddress" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="Repeat email"
-        android:textColor="#000"
-        android:textSize="18sp"/>
-
-    <EditText
-        android:id="@+id/repeatemail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:hint="Repeat email"
-        android:inputType="textEmailAddress"/>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -81,6 +69,7 @@
                 android:text="Password"
                 android:textColor="#000"
                 android:textSize="18sp" />
+
             <EditText
                 android:id="@+id/editPassword"
                 android:layout_width="match_parent"
@@ -88,18 +77,15 @@
                 android:layout_margin="8dp"
                 android:hint="Input Password"
                 android:inputType="textPassword" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:textColor="#000"
                 android:text="Confirm Password"
+                android:textColor="#000"
                 android:textSize="18sp" />
+
             <EditText
                 android:id="@+id/editConfirmPassword"
                 android:layout_width="match_parent"
@@ -118,8 +104,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"
-        android:background="#ce93d8"
-        android:textColor="@android:color/black"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffff"
         android:text="Daftar"
         android:onClick="Daftar"/>
 

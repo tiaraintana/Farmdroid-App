@@ -22,7 +22,6 @@
         <activity android:name=".PenyakitBercak" />
         <activity android:name=".PenyakitBlast" />
         <activity android:name=".PenyakitHawar" />
-        <activity android:name=".Menu" />
         <activity
             android:name=".TentangPenyakit"
             android:screenOrientation="fullSensor" />
