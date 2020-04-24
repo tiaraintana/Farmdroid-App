@@ -34,13 +34,6 @@
         android:text="Cara Penggunaan :\nMemanfaatkan kamera pada smart phone untuk secara otomatis sistem ini akan mendetekni mengenai perlakuan yang harus anda berikan terhadap perkembangan padi itu sendiri. "
         android:textColor="#f000"
         android:textSize="25dp" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:text="Owner :\nGanang , Ulfah, Tiara , dan Ijad dari Universitas Muhammadiyah Malang"
-        android:textColor="#f000"
-        android:textSize="25dp" />
+    
 
 </LinearLayout>
