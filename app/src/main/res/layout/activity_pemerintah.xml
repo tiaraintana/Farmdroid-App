@@ -6,4 +6,193 @@
     android:layout_height="match_parent"
     tools:context=".Pemerintah">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nama1"
+                android:layout_width="254dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="56dp"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical"
+                android:textStyle="bold"
+                android:text="News \n About Goverment "
+                android:textColor="#f000"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Browser Here "
+
+                android:layout_gravity="center"
+                android:paddingBottom="0dp"
+                android:onClick="browserPemerintahan"
+                android:background="#808080"
+                >
+
+            </Button>
+
+
+            <ImageView
+                android:layout_width="343dp"
+                android:layout_height="253dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:src="@drawable/logo_pemerintahan"
+                android:paddingLeft="10sp"
+                android:outlineAmbientShadowColor="@color/light_blue_500"
+                />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="56dp"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical"
+                android:textStyle="normal"
+                android:text="Selamat Membaca\n\n"
+
+                android:textColor="#0000CD"
+                android:textSize="10sp" />
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:outlineAmbientShadowColor="@color/light_blue_500"
+                android:paddingRight="20dp"
+                android:src="@drawable/berita_pemerintahan1" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:scrollbars="vertical"
+                android:text="Pemerintah dan DPR Sepakat Tunda Bahas Klaster Ketenagakerjaan dalam RUU Cipta Kerja
+Kategori Berita Pemerintahan
+Presiden Joko Widodo menyampaikan bahwa kemarin Pemerintah telah menyampaikan kepada Dewan Perwakilan Rakyat (DPR) mengenai penundaan pembahasan Klaster Ketenagakerjaan dalam Rancangan Undang-Undang (RUU) Cipta Kerja."
+                android:textColor="#f000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/berita1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:onClick="browserPemerintahan1"
+                android:scrollbars="vertical"
+                android:text="Lanjut Membaca"
+                android:textColor="@color/light_blue_500"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:outlineAmbientShadowColor="@color/light_blue_500"
+                android:paddingRight="20dp"
+                android:src="@drawable/berita_pemerintahan2" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:scrollbars="vertical"
+                android:text=" Update Kasus Corona di RI: 7.135 Positif, 842 Sembuh dan 616 Meninggal
+Zunita Putri - detikNews
+Selasa, 21 Apr 2020 15:47 WIB
+Jakarta - Kasus positif virus Corona (COVID-19) di Indonesia mencapai angka 7.135 hari ini. Angka itu bertambah 375 angka kasus positif Corona sebelumnya.
+'Kasus terkonfirmasi positif COVID-19 totalnya menjadi 7.135 orang,' kata Juru Bicara Pemerintah untuk Penanganan wabah Virus Corona, dr Achmad Yurianto, dalam konferensi pers yang ditayangkan saluran YouTube Badan Nasional Penanggulangan Bencana (BNPB), Selasa (21/4/2020).
+            "
+                android:textColor="#f000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/berita2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical"
+                android:textStyle="normal"
+                android:text="Lanjut Membaca"
+                android:onClick="browserPemerintahan2"
+                android:textColor="@color/light_blue_500"
+                android:textSize="10sp" />
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:outlineAmbientShadowColor="@color/light_blue_500"
+                android:paddingRight="20dp"
+                android:src="@drawable/berita_pemerintahan3" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:scrollbars="vertical"
+                android:text="Soal Penanganan Covid-19 di Indonesia, Ini Kata Susi Pudjiastuti Kompas.com - 25/04/2020, 06:12 WIB
+
+Artikel ini telah tayang di Kompas.com dengan judul 'Soal Penanganan Covid-19 di Indonesia, Ini Kata Susi Pudjiastuti', https://money.kompas.com/read/2020/04/25/061200426/soal-penanganan-covid-19-di-indonesia-ini-kata-susi-pudjiastuti.
+            Penulis : Fika Nurul Ulya
+            Editor : Erlangga Djumena
+            JAKARTA, KOMPAS.com - Beberapa pihak mengkritik kinerja Pemerintah dalam menangani wabah virus corona (Covid-19) di Indonesia. Bahkan ada yang menilai pemerintah lalai. Namun menurut Menteri Kelautan dan Perikanan periode 2014-2019, Susi Pudjiastuti, tidak ada negara yang sempurna. Di masa pandemi, semua negara tengah belajar dan berbenah.
+            "
+                android:textColor="#f000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/berita3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical"
+                android:textStyle="normal"
+                android:text="Lanjut Membaca"
+                android:onClick="browserPemerintahan3"
+                android:textColor="@color/light_blue_500"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

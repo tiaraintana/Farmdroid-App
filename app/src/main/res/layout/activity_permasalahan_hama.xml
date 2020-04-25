@@ -6,4 +6,192 @@
     android:layout_height="match_parent"
     tools:context=".PermasalahanHama">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nama1"
+                android:layout_width="254dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="56dp"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical"
+                android:textStyle="bold"
+                android:text="News \n Hama Pertanian "
+                android:textColor="#f000"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Browser Here "
+
+                android:layout_gravity="center"
+                android:paddingBottom="0dp"
+                android:onClick="browserHama"
+                android:background="#808080"
+                >
+
+            </Button>
+
+
+            <ImageView
+                android:layout_width="343dp"
+                android:layout_height="253dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:src="@drawable/logo_permasalahan_hama"
+                android:paddingLeft="10sp"
+                android:outlineAmbientShadowColor="@color/light_blue_500"
+                />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="56dp"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical"
+                android:textStyle="normal"
+                android:text="Selamat Membaca\n\n"
+
+                android:textColor="#0000CD"
+                android:textSize="10sp" />
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:outlineAmbientShadowColor="@color/light_blue_500"
+                android:paddingRight="20dp"
+                android:src="@drawable/berita_permasalahan_hama1" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:scrollbars="vertical"
+                android:text="Atasi Serangan Hama Belalang, Yordania Kerahkan Angkatan Udara Kompas.com - 08/05/2019, 15:45 WIB
+
+Artikel ini telah tayang di Kompas.com dengan judul 'Atasi Serangan Hama Belalang, Yordania Kerahkan Angkatan Udara', https://internasional.kompas.com/read/2019/05/08/15450371/atasi-serangan-hama-belalang-yordania-kerahkan-angkatan-udara.
+            Penulis : Agni Vidya Perdana
+            Editor : Agni Vidya Perdana
+            AMMAN, KOMPAS.com - Otoritas kerajaan Yordania mengerahkan angkatan udaranya untuk mengatasi serangan hama belalang. Dalam rentang waktu 24 jam, dua gelombang gerombolan belalang itu menerjang wilayah barat daya Yordania, di wilayah Tafilah, pada Senin (6/5/2019). Demikian dilansir The National. Para pejabat setempat melaporkan bahwa kerumunan belalang itu telah menyerang wilayah di Tafilah, yang terkenal dengan kebun buah dan zaitunnya. Di Tafilah juga terdapat cagar alam Dana Biosphere, objek wisata sekaligus area konservasi alam terbesar di Yordania.
+            "
+                android:textColor="#f000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/berita1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:onClick="browserHama1"
+                android:scrollbars="vertical"
+                android:text="Lanjut Membaca"
+                android:textColor="@color/light_blue_500"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:outlineAmbientShadowColor="@color/light_blue_500"
+                android:paddingRight="20dp"
+                android:src="@drawable/berita_permasalahan_hama2" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:scrollbars="vertical"
+                android:text="Hama Wereng Menyerang, Dewan Minta Dinas Pertanian Lebih Proaktif
+29 MARET 2020, 18: 54: 44 WIB | EDITOR : MARDIANSYAH TRIRAHARJO
+JOMBANG – Komisi B DPRD Jombang meminta Dinas Pertanian (Disperta) Jombang proaktif mengatasi serangan hama wereng. Termasuk melakukan pencegahan dengan memberi bantuan pupuk, agar serangan hama wereng tidak semakin meluas.
+"
+                android:textColor="#f000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/berita2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical"
+                android:textStyle="normal"
+                android:text="Lanjut Membaca"
+                android:onClick="browserHama2"
+                android:textColor="@color/light_blue_500"
+                android:textSize="10sp" />
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:outlineAmbientShadowColor="@color/light_blue_500"
+                android:paddingRight="20dp"
+                android:src="@drawable/berita_permasalahan_hama3" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:scrollbars="vertical"
+                android:text="Kementerian Pertanian (Kementan) memperkenalkan cara jitu yang aman dan alami guna membasmi siput murbai yang resisten terhadap pertanaman padi. Cara ini penting diterapkap petani mengingat satu ekor siput murbei mampu menghabiskan satu rumpun padi yang berumur antara 15 hingga 30 hari dalam satu malam.
+
+'Melalui Balai Besar Peramalan Organisme Pengganggu Tanaman (OPT), Kementan mulai mengenalkan tindakan pengendalian non-kimia dengan pestisida nabati yang memanfaatkan bahan dari tumbuhan,' kata Kordinator Fungsional Petugas OPT Balai Besar Peramalan OPT, Wayan, di kantornya, Karawang, Senin (17/9/2019).
+            "
+                android:textColor="#f000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/berita3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical"
+                android:textStyle="normal"
+                android:text="Lanjut Membaca"
+                android:onClick="browserHama3"
+                android:textColor="@color/light_blue_500"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

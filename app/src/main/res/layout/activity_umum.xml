@@ -6,4 +6,189 @@
     android:layout_height="match_parent"
     tools:context=".Umum">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nama1"
+                android:layout_width="254dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="56dp"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical"
+                android:textStyle="bold"
+                android:text="Berita Umum "
+                android:textColor="#f000"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Browser Here "
+
+                android:layout_gravity="center"
+                android:paddingBottom="0dp"
+                android:onClick="browserUmum"
+                android:background="#808080"
+                >
+
+            </Button>
+
+
+            <ImageView
+                android:layout_width="343dp"
+                android:layout_height="253dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:src="@drawable/logo_umum"
+                android:paddingLeft="10sp"
+                android:outlineAmbientShadowColor="@color/light_blue_500"
+                />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="56dp"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical"
+                android:textStyle="normal"
+                android:text="Selamat Membaca\n\n"
+
+                android:textColor="#0000CD"
+                android:textSize="10sp" />
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:outlineAmbientShadowColor="@color/light_blue_500"
+                android:paddingRight="20dp"
+                android:src="@drawable/umum1" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:scrollbars="vertical"
+                android:text="JAKARTA, KOMPAS.com - Larangan mudik resmi diterapkan. Kementerian Perhubungan ( Kemenhub) menyatakan, aturan larangan mudik dengan menerapkan pembatasan transportasi umum atau pribadi akan diterapkan mulai Jumat (24/4/2020) pukul 00.00 WIB."
+                android:textColor="#f000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/berita1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:onClick="browserUmum1"
+                android:scrollbars="vertical"
+                android:text="Lanjut Membaca"
+                android:textColor="@color/light_blue_500"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:outlineAmbientShadowColor="@color/light_blue_500"
+                android:paddingRight="20dp"
+                android:src="@drawable/umum2" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:scrollbars="vertical"
+                android:text=" Wajah Muslim di Dunia Hadapi Ramadan di Tengah Pandemi COVID-19
+Liputan6.com, Jakarta Ramadan di tengah pandemi COVID-19 tak semarak seperti tahun-tahun sebelumnya. Masjid-masjid, termasuk Mekkah dan Madinah di Arab Saudi, kota paling suci dalam Islam yang biasanya dipenuhi umat Islam saat Ramadan kini ditutup.
+
+Begitupun dengan kegiatan keagamaan yang biasanya dilakukan umat muslim di masjid seperti salat tarawih, tadarus bahkan bermalam di masjid pun ditiadakan.
+"
+                android:textColor="#f000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/berita2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical"
+                android:textStyle="normal"
+                android:text="Lanjut Membaca"
+                android:onClick="browserUmum2"
+                android:textColor="@color/light_blue_500"
+                android:textSize="10sp" />
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:outlineAmbientShadowColor="@color/light_blue_500"
+                android:paddingRight="20dp"
+                android:src="@drawable/umum3" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:scrollbars="vertical"
+                android:text="Jaga Ketat Exit Tol Cileunyi, Polisi Halau Mobil Pemudik
+Muhammad Iqbal - detikNews
+Sabtu, 25 Apr 2020 11:28 WIB
+
+Kabupaten Bandung - Petugas gabungan terdiri personel Polresta Bandung dan Dishub Kabupaten Bandung menjaga ketat area exit Tol Cileunyi. Mereka menghalau kendaraan bermotor roda empat yang diketahui merupakan pemudik. Bahkan, petugas meminta mobil pemudik itu putar balik.
+Dari pantauan detikcom, Sabtu (25/4/2020), pukul 10.30 WIB, sejumlah petugas menanyakan keperluan pengendara. Petugas meminta pengendara menunjukkan kartu identitas dan surat kendaraan. Beberapa pengendara berniat mudik."
+                android:textColor="#f000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/berita3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical"
+                android:textStyle="normal"
+                android:text="Lanjut Membaca"
+                android:onClick="browserUmum3"
+                android:textColor="@color/light_blue_500"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

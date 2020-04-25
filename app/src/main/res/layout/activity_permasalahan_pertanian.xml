@@ -28,6 +28,20 @@
         android:textColor="#f000"
         android:textSize="15sp" />
 
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Browser Google "
+             android:layout_gravity="center"
+             android:paddingBottom="10dp"
+             android:onClick="browser1"
+             android:background="#808080"
+             >
+
+
+         </Button>
+
+
         <ImageView
             android:layout_width="343dp"
             android:layout_height="233dp"
@@ -55,7 +69,7 @@
 
         <ImageView
             android:layout_width="150dp"
-            android:layout_height="100dp"
+            android:layout_height="150dp"
             android:layout_gravity="left"
             android:layout_marginLeft="20dp"
             android:gravity="center_horizontal"
@@ -87,12 +101,13 @@
             android:scrollbars="vertical"
             android:textStyle="normal"
             android:text="Lanjut Membaca"
+            android:onClick="browserBerita1"
             android:textColor="@color/light_blue_500"
             android:textSize="10sp" />
 
         <ImageView
             android:layout_width="150dp"
-            android:layout_height="100dp"
+            android:layout_height="150dp"
             android:layout_gravity="left"
             android:layout_marginLeft="20dp"
             android:gravity="center_horizontal"
@@ -123,13 +138,14 @@
             android:scrollbars="vertical"
             android:textStyle="normal"
             android:text="Lanjut Membaca"
+            android:onClick="browserBerita2"
             android:textColor="@color/light_blue_500"
             android:textSize="10sp" />
 
 
         <ImageView
             android:layout_width="150dp"
-            android:layout_height="100dp"
+            android:layout_height="150dp"
             android:layout_gravity="left"
             android:layout_marginLeft="20dp"
             android:gravity="center_horizontal"
@@ -154,11 +170,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:paddingBottom="50dp"
             android:layout_marginTop="5dp"
             android:gravity="center_horizontal"
             android:scrollbars="vertical"
             android:textStyle="normal"
             android:text="Lanjut Membaca"
+            android:onClick="browserBerita3"
             android:textColor="@color/light_blue_500"
             android:textSize="10sp" />
 
