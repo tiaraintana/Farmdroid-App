@@ -9,8 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MenuAfterLogin"></activity>
-        <activity android:name=".PengendalianTungro"></activity>
+        <activity android:name=".berita1"></activity>
+        <activity android:name=".Umum" />
+        <activity android:name=".PermasalahanHama" />
+        <activity android:name=".Pemerintah" />
+        <activity android:name=".PerkembanganTeknologi" />
+        <activity android:name=".PermasalahanPertanian" />
+        <activity android:name=".HalamanNews" />
+        <activity android:name=".MenuAfterLogin" />
+        <activity android:name=".PengendalianTungro" />
         <activity android:name=".PengendalianBusukpelepah" />
         <activity android:name=".PengendalianBusukbatang" />
         <activity android:name=".PengendalianBercak" />
