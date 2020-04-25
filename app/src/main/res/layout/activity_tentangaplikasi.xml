@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".TentangAplikasi"
     android:orientation="vertical"
-    android:background="@drawable/hijau">
+    android:background="@drawable/animation">
 
     <TextView
         android:layout_width="match_parent"
