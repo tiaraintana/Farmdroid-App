@@ -1,0 +1,3 @@
+aplikasi Sistem Pakar Perkembangan Padi
+merupakan sebuah sistem pintar yang dirancang khusus untuk mementau perkembangan padi
+sehingga mampu membantu petani-petani dalam memamtau hasil pertanian mereka dengan media smartphone
