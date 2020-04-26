@@ -16,8 +16,8 @@
         <activity android:name=".PerkembanganTeknologi" />
         <activity android:name=".PermasalahanPertanian" />
         <activity android:name=".HalamanNews" />
-        <activity android:name=".MenuAfterLogin" />
-        <activity android:name=".PengendalianTungro" />
+        <activity android:name=".MenuAfterLogin"/>
+        <activity android:name=".PengendalianTungro"/>
         <activity android:name=".PengendalianBusukpelepah" />
         <activity android:name=".PengendalianBusukbatang" />
         <activity android:name=".PengendalianBercak" />

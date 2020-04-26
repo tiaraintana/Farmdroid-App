@@ -1,63 +1,72 @@
 package com.example.system_login;
 
-import androidx.appcompat.app.AlertDialog;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.AnimationDrawable;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.text.method.HideReturnsTransformationMethod;
-import android.text.method.PasswordTransformationMethod;
+import android.text.TextUtils;
 import android.view.View;
-import android.widget.CheckBox;
-import android.widget.EditText;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
+import android.widget.Button;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.rengwuxian.materialedittext.MaterialEditText;
 
 
 public class MainActivity extends AppCompatActivity {
-    RelativeLayout relativeLayout;
-    AnimationDrawable animationDrawable;
-    private EditText username;
-    private EditText password;
+    MaterialEditText email, password;
+    Button btn_login;
+
+    FirebaseAuth auth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        username = (EditText) findViewById(R.id.username);
-        password = (EditText) findViewById(R.id.password);
+        auth = FirebaseAuth.getInstance();
+
+        email = findViewById(R.id.email);
+        password = findViewById(R.id.password);
+        btn_login = findViewById(R.id.btn_login);
+
+        btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String txt_email = email.getText().toString();
+                String txt_password = password.getText().toString();
+
+                if (TextUtils.isEmpty(txt_email) || TextUtils.isEmpty(txt_password)) {
+                    Toast.makeText(MainActivity.this, "All Fileds are required", Toast.LENGTH_SHORT).show();
+                    ;
+                } else {
+                    auth.signInWithEmailAndPassword(txt_email, txt_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                Intent intent = new Intent(MainActivity.this, MenuAfterLogin.class);
+                                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                startActivity(intent);
+                                finish();
+                            } else {
+                                Toast.makeText(MainActivity.this, "Authentication failed", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+                }
+            }
+        });
     }
 
-    public void Pindah(View view) {
-        String usernameKey = username.getText().toString();
-        String passwordKey = password.getText().toString();
-
-        if (usernameKey.equals("") && passwordKey.equals("")) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            builder.setMessage("ISIEN SEK TALAH!!!")
-                    .setNegativeButton("Retry", null).create().show();
-        }
-        else if (usernameKey.equals("")){
-            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            builder.setMessage("ISIEN USERNAME E TAALLLAAHHH!!!")
-                    .setNegativeButton("Retry", null).create().show();
-        }
-        else if(passwordKey.equals("")){
-            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            builder.setMessage("ISIEN PASSWORD E TAALLLAAHHH!")
-                    .setNegativeButton("Retry", null).create().show();
-        }
-        else {
-            Intent intent = new Intent(MainActivity.this, MenuAfterLogin.class);
-            startActivity(intent);
-        }
-    }
     public void Registrasi(View view) {
         Intent intent = new Intent(MainActivity.this, RegistrasiActivity.class);
         startActivity(intent);
     }
+
 }
 
 

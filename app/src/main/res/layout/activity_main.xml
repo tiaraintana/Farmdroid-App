@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
@@ -7,57 +8,63 @@
     android:background="@drawable/login_potrait"
     tools:context="MainActivity">
 
-
-    <EditText
-        android:id="@+id/username"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:layout_marginTop="450dp"
-        android:hint="Username"
-        android:drawableLeft="@drawable/ic_action_user"
-        android:drawablePadding="24dp"/>
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp" >
 
-    <EditText
-        android:id="@+id/password"
-        android:layout_below="@id/username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:layout_marginTop="4dp"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:drawableLeft="@drawable/ic_lock"
-        android:drawablePadding="25dp"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="430dp"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/ic_action_user"
+            android:drawablePadding="25dp"
+            android:hint="Email"
+            app:met_floatingLabel="normal" />
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/password"
-        android:text="Login"
-        android:onClick="Pindah"
-        android:background="#66BD1A"
-        android:textColor="@android:color/black"
-        android:layout_margin="5dp"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="25dp"
+            android:hint="Password"
+            app:met_floatingLabel="normal" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:id="@+id/btn_login"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#ffff"/>
 
-    <TextView
-        android:id="@+id/hahha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnLogin"
-        android:text="@string/hahha"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"/>
-    <Button
-        android:id="@+id/btn_registrasi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Registrasi"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/hahha"
-        android:background="#66BD1A"
-        android:textColor="@android:color/black"
-        android:onClick="Registrasi"/>
-</RelativeLayout>
+        <TextView
+            android:id="@+id/hahha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnLogin"
+            android:text="@string/hahha"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+        <Button
+            android:id="@+id/btn_registrasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrasi"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/hahha"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:onClick="Registrasi"/>
+
+    </LinearLayout>
+
+
+   </RelativeLayout>
