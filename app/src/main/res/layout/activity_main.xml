@@ -8,6 +8,7 @@
     android:background="@drawable/login_potrait"
     tools:context="MainActivity">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +20,7 @@
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="430dp"
+            android:layout_marginTop="445dp"
             android:inputType="textEmailAddress"
             android:drawableLeft="@drawable/ic_action_user"
             android:drawablePadding="25dp"
@@ -36,13 +37,15 @@
             android:drawablePadding="25dp"
             android:hint="Password"
             app:met_floatingLabel="normal" />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="login"
+            android:text="MASUK"
+            android:textColor="#4fab55"
             android:id="@+id/btn_login"
-            android:background="@color/colorPrimaryDark"
-            android:textColor="#ffff"/>
+            android:background="@drawable/button_login" />
+
 
         <TextView
             android:id="@+id/hahha"
@@ -53,18 +56,20 @@
             android:textStyle="bold"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"/>
+
         <Button
             android:id="@+id/btn_registrasi"
-            android:layout_width="wrap_content"
+            android:layout_width="115dp"
             android:layout_height="wrap_content"
-            android:text="Registrasi"
-            android:layout_centerHorizontal="true"
             android:layout_below="@+id/hahha"
-            android:background="@color/colorPrimaryDark"
-            android:textColor="@android:color/white"
-            android:onClick="Registrasi"/>
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_register"
+            android:onClick="Registrasi"
+            android:textColor="#4fab55"
+            android:text="DAFTAR" />
 
     </LinearLayout>
 
 
-   </RelativeLayout>
+</RelativeLayout>
