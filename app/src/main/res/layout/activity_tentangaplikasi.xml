@@ -5,19 +5,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".TentangAplikasi"
     android:orientation="vertical"
-    android:background="@drawable/animation">
+    android:background="@drawable/background_news">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="About Us"
+        android:text="Tentang Program"
         android:layout_gravity="center_horizontal"
         android:gravity="center"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="15dp"
         android:textColor="#f000"
-        android:textSize="25dp" />
+        android:textSize="30sp"
+        android:textStyle="bold"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,12 +26,14 @@
         android:textColor="#f000"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
         android:textSize="25dp" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
         android:text="Cara Penggunaan :\nMemanfaatkan kamera pada smart phone untuk secara otomatis sistem ini akan mendetekni mengenai perlakuan yang harus anda berikan terhadap perkembangan padi itu sendiri. "
         android:textColor="#f000"
         android:textSize="25dp" />
