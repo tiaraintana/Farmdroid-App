@@ -19,26 +19,25 @@
 
             <TextView
                 android:id="@+id/nama1"
-                android:layout_width="254dp"
-                android:layout_height="50dp"
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="56dp"
+                android:layout_marginTop="15dp"
                 android:gravity="center_horizontal"
                 android:scrollbars="vertical"
-                android:textStyle="bold"
                 android:text="Berita Umum "
                 android:textColor="#f000"
-                android:textSize="15sp" />
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Browser Here "
-
+                android:layout_width="150dp"
+                android:layout_height="60dp"
                 android:layout_gravity="center"
-                android:paddingBottom="0dp"
+                android:paddingBottom="10dp"
                 android:onClick="browserUmum"
-                android:background="#808080"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_browser"
                 >
 
             </Button>
@@ -51,6 +50,7 @@
                 android:gravity="center_horizontal"
                 android:src="@drawable/logo_umum"
                 android:paddingLeft="10sp"
+                android:layout_marginTop="10dp"
                 android:outlineAmbientShadowColor="@color/light_blue_500"
                 />
 
@@ -59,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="56dp"
+                android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
                 android:scrollbars="vertical"
                 android:textStyle="normal"
