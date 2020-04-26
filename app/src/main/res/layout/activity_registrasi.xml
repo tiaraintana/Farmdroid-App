@@ -4,25 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_news"
     tools:context=".RegistrasiActivity">
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/bar_activity"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:layout_below="@id/toolbar"
         android:orientation="vertical"
         android:padding="16dp" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create a New Account"
-            android:textSize="20sp"
+            android:text="Buat Akun Baru"
+            android:textSize="25sp"
             android:textStyle="bold"
             />
 
@@ -62,10 +59,10 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="register"
+            android:text="DAFTAR SEKARANG"
             android:id="@+id/btn_register"
-            android:background="@color/colorPrimaryDark"
-            android:textColor="#ffff"/>
+            android:background="@drawable/button_register"
+            android:textColor="#4fab55"/>
 
     </LinearLayout>
 
