@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.system_login">
 
+    <uses-permission android:name="android.permission.CAMERA"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,15 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".berita1"></activity>
+        <activity android:name=".ScanActivity"></activity>
+        <activity android:name=".berita1" />
         <activity android:name=".Umum" />
         <activity android:name=".PermasalahanHama" />
         <activity android:name=".Pemerintah" />
         <activity android:name=".PerkembanganTeknologi" />
         <activity android:name=".PermasalahanPertanian" />
         <activity android:name=".HalamanNews" />
-        <activity android:name=".MenuAfterLogin"/>
-        <activity android:name=".PengendalianTungro"/>
+        <activity android:name=".MenuAfterLogin" />
+        <activity android:name=".PengendalianTungro" />
         <activity android:name=".PengendalianBusukpelepah" />
         <activity android:name=".PengendalianBusukbatang" />
         <activity android:name=".PengendalianBercak" />

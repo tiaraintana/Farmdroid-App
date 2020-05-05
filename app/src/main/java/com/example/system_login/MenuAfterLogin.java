@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MenuAfterLogin extends AppCompatActivity {
-    ImageView Daftar, TtgProgram, HalamanBerita;
+    ImageView Daftar, TtgProgram, HalamanBerita, scanner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class MenuAfterLogin extends AppCompatActivity {
         Daftar = findViewById(R.id.dftr_penyakit);
         TtgProgram = findViewById(R.id.ttg_program);
         HalamanBerita = findViewById(R.id.berita);
+        scanner = findViewById(R.id.scanner_padi);
 
         Daftar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +40,14 @@ public class MenuAfterLogin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MenuAfterLogin.this, HalamanNews.class);
+                startActivity(intent);
+            }
+        });
+
+        scanner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuAfterLogin.this, ScanActivity.class);
                 startActivity(intent);
             }
         });
