@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.system_login">
 
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ScanActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ScanActivity" />
         <activity android:name=".berita1" />
         <activity android:name=".Umum" />
         <activity android:name=".PermasalahanHama" />
@@ -42,7 +43,7 @@
             android:name=".RegistrasiActivity"
             android:screenOrientation="fullSensor" />
         <activity
-            android:name=".MainActivity"
+            android:name=".welcomeScreen"
             android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
