@@ -11,6 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,13 +33,12 @@
 
             <Button
                 android:layout_width="150dp"
-                android:layout_height="60dp"
+                android:layout_height="56dp"
                 android:layout_gravity="center"
-                android:paddingBottom="10dp"
-                android:onClick="browserPerkembangan"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/button_browser"
-                >
+                android:onClick="browserPerkembangan"
+                android:paddingBottom="10dp">
 
             </Button>
 
@@ -61,11 +62,11 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
                 android:scrollbars="vertical"
-                android:textStyle="normal"
                 android:text="Selamat Membaca\n\n"
-
                 android:textColor="#0000CD"
-                android:textSize="10sp" />
+
+                android:textSize="10sp"
+                android:textStyle="normal" />
 
 
             <ImageView

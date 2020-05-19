@@ -7,36 +7,83 @@
     android:orientation="vertical"
     android:background="@drawable/background_news">
 
-    <TextView
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+        <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tentang Program"
+        android:text="APLIKASI SISTEM PAKAR IDENTIFIKASI PENYAKIT PADI"
         android:layout_gravity="center_horizontal"
         android:gravity="center"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:textColor="#f000"
-        android:textSize="30sp"
+        android:textSize="27sp"
         android:textStyle="bold"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nama :\nSistem pendeteksi perkembangan padi, dimana sistem ini diintegrasikan dengan database penyakit padi. "
+        android:text="Aplikasi ini dibuat sebagai persyaratan untuk mengerjakan tugas besar mata kuliah Pemrograman Mobile di Jurusan Teknik Informatika, Universitas Muhammadiyah Malang"
         android:textColor="#f000"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="40dp"
-        android:textSize="25dp" />
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disusun Oleh : \n\n Tiara Intana Sari \n Ulfah Nur Oktaviana \n Naufaldi Izad Fimana\n Ganang Abdi"
+        android:textAlignment="center"
+        android:textColor="#f000"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="233dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:src="@drawable/logoumm"
+        android:paddingLeft="10sp"
+        android:outlineAmbientShadowColor="@color/light_blue_500"
+        />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JURUSAN TEKNIK INFORMATIKA UNIVERSITAS MUHAMMADIYAH MALANG"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:textColor="#f000"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="25dp"
-        android:text="Cara Penggunaan :\nMemanfaatkan kamera pada smart phone untuk secara otomatis sistem ini akan mendetekni mengenai perlakuan yang harus anda berikan terhadap perkembangan padi itu sendiri. "
+        android:text="Caraa Penggunaan :\nMemanfaatkan kamera pada smart phone untuk secara otomatis sistem ini akan mendetekni mengenai perlakuan yang harus anda berikan terhadap perkembangan padi itu sendiri. Selain itu fitur yang disediakan oleh sistem pakar ini juga mampu membantu anda untuk mengatasi segala permasalahan padi seperti : \n1. Fitur \n2. Fitur Tentang Penyakit \n 3. Fitur Chatbot \n 4. Fitur Konsultasi \n 5. Fitur Scanner \n 6. Fitur Koperasi "
         android:textColor="#f000"
         android:textSize="25dp" />
+        </LinearLayout>
 
-
+    </ScrollView>
 </LinearLayout>
