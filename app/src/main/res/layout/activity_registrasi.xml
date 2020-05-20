@@ -62,7 +62,7 @@
             android:text="DAFTAR SEKARANG"
             android:id="@+id/btn_register"
             android:background="@drawable/button_register"
-            android:textColor="#4fab55"/>
+            android:textColor="#ffffff"/>
 
     </LinearLayout>
 

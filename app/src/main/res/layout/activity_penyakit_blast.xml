@@ -59,13 +59,13 @@
                 android:textSize="18sp" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="234dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
-                android:background="#66BD1A"
+                android:background="@drawable/button_register"
                 android:onClick="Kendali"
                 android:text="CARA PENGENDALIAN"
-                android:textColor="#EFE6E6"
+                android:textColor="#ffffff"
                 android:textSize="18sp" />
         </LinearLayout>
     </ScrollView>

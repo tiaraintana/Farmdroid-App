@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="MASUK"
-            android:textColor="#4fab55"
+            android:textColor="#ffffff"
             android:id="@+id/btn_login"
             android:background="@drawable/button_login" />
 
@@ -68,7 +68,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/button_register"
             android:onClick="Registrasi"
-            android:textColor="#4fab55"
+            android:textColor="#ffffff"
             android:text="DAFTAR" />
 
     </LinearLayout>
