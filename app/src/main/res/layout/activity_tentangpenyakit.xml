@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/animation"
+    android:background="@drawable/background_news"
     tools:context=".TentangPenyakit">
     <ScrollView
         android:layout_width="match_parent"
@@ -13,8 +13,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
-
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daftar Penyakit"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:textColor="#f000"
+                android:textSize="27sp"
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/text1"
                 android:layout_width="match_parent"
@@ -22,7 +32,8 @@
                 android:text="1. HAWAR DAUN"
                 android:scrollbars="vertical"
                 android:textColor="#f000"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="25dp"
                 android:textSize="25sp" />
             <TextView
                 android:id="@+id/text2"
@@ -31,7 +42,8 @@
                 android:text="2. BLAST"
                 android:scrollbars="vertical"
                 android:textColor="#f000"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="25dp"
                 android:textSize="25sp" />
             <TextView
                 android:id="@+id/text3"
@@ -40,7 +52,8 @@
                 android:text="3. BERCAK DAUN"
                 android:scrollbars="vertical"
                 android:textColor="#f000"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="25dp"
                 android:textSize="25sp" />
             <TextView
                 android:id="@+id/text4"
@@ -49,7 +62,8 @@
                 android:text="4. BUSUK BATANG"
                 android:scrollbars="vertical"
                 android:textColor="#f000"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="25dp"
                 android:textSize="25sp" />
             <TextView
                 android:id="@+id/text5"
@@ -58,7 +72,8 @@
                 android:text="5. TUNGRO"
                 android:scrollbars="vertical"
                 android:textColor="#f000"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="25dp"
                 android:textSize="25sp" />
             <TextView
                 android:id="@+id/text6"
@@ -67,7 +82,8 @@
                 android:text="6. BUSUK PELEPAH"
                 android:scrollbars="vertical"
                 android:textColor="#f000"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="25dp"
                 android:textSize="25sp" />
         </LinearLayout>
     </ScrollView>
