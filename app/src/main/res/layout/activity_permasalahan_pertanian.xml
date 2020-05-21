@@ -79,16 +79,14 @@
                 android:src="@drawable/permasalahan_pertanian1" />
 
             <TextView
-
+                android:justificationMode="inter_word"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text="Moeldoko : Ketersediaan Lahan jadi Tantangan Pertanian Indonesia
-            Agrofarm.co.id-Ketua Umum Himpunan Kerukunan Tani Indonesia (HKTI), Moeldoko, mengatakan bahwa salah satu tantangan besar pertanian saat ini adalah menyangkut masalah ketersediaan lahan.
-            Ketua Umum Himpunan Kerukunan \nTani Indonesia (HKTI)/ist"
+                android:text="Moeldoko : Ketersediaan Lahan jadi Tantangan Pertanian Indonesia Agrofarm.co.id-Ketua Umum Himpunan Kerukunan Tani Indonesia (HKTI), Moeldoko, mengatakan bahwa salah satu tantangan besar pertanian saat ini adalah menyangkut masalah ketersediaan lahan. Ketua Umum Himpunan Kerukunan Tani Indonesia (HKTI)/ist"
                 android:textColor="#f000"
                 android:textSize="12sp" />
 
@@ -117,10 +115,10 @@
                 android:src="@drawable/permasalahan_pertanian2" />
 
             <TextView
-
+                android:justificationMode="inter_word"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
@@ -155,10 +153,10 @@
                 android:src="@drawable/permasalahan_pertanian3" />
 
             <TextView
-
+                android:justificationMode="inter_word"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"

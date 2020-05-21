@@ -80,16 +80,15 @@
                 android:src="@drawable/berita_pemerintahan1" />
 
             <TextView
-
+                android:justificationMode="inter_word"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
                 android:text="Pemerintah dan DPR Sepakat Tunda Bahas Klaster Ketenagakerjaan dalam RUU Cipta Kerja
-Kategori Berita Pemerintahan
-Presiden Joko Widodo menyampaikan bahwa kemarin Pemerintah telah menyampaikan kepada Dewan Perwakilan Rakyat (DPR) mengenai penundaan pembahasan Klaster Ketenagakerjaan dalam Rancangan Undang-Undang (RUU) Cipta Kerja."
+Kategori Berita Pemerintahan Presiden Joko Widodo menyampaikan bahwa kemarin Pemerintah telah menyampaikan kepada Dewan Perwakilan Rakyat (DPR) mengenai penundaan pembahasan Klaster Ketenagakerjaan dalam Rancangan Undang-Undang (RUU) Cipta Kerja."
                 android:textColor="#f000"
                 android:textSize="12sp" />
 
@@ -118,18 +117,14 @@ Presiden Joko Widodo menyampaikan bahwa kemarin Pemerintah telah menyampaikan ke
                 android:src="@drawable/berita_pemerintahan2" />
 
             <TextView
-
+                android:justificationMode="inter_word"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text=" Update Kasus Corona di RI: 7.135 Positif, 842 Sembuh dan 616 Meninggal
-Zunita Putri - detikNews
-Selasa, 21 Apr 2020 15:47 WIB
-Jakarta - Kasus positif virus Corona (COVID-19) di Indonesia mencapai angka 7.135 hari ini. Angka itu bertambah 375 angka kasus positif Corona sebelumnya.
-'Kasus terkonfirmasi positif COVID-19 totalnya menjadi 7.135 orang,' kata Juru Bicara Pemerintah untuk Penanganan wabah Virus Corona, dr Achmad Yurianto, dalam konferensi pers yang ditayangkan saluran YouTube Badan Nasional Penanggulangan Bencana (BNPB), Selasa (21/4/2020).
+                android:text="Update Kasus Corona di RI: 7.135 Positif, 842 Sembuh dan 616 Meninggal Zunita Putri - detikNews Selasa, 21 Apr 2020 15:47 WIB Jakarta - Kasus positif virus Corona (COVID-19) di Indonesia mencapai angka 7.135 hari ini. Angka itu bertambah 375 angka kasus positif Corona sebelumnya. 'Kasus terkonfirmasi positif COVID-19 totalnya menjadi 7.135 orang,' kata Juru Bicara Pemerintah untuk Penanganan wabah Virus Corona, dr Achmad Yurianto, dalam konferensi pers yang ditayangkan saluran YouTube Badan Nasional Penanggulangan Bencana (BNPB), Selasa (21/4/2020).
             "
                 android:textColor="#f000"
                 android:textSize="12sp" />
@@ -160,19 +155,14 @@ Jakarta - Kasus positif virus Corona (COVID-19) di Indonesia mencapai angka 7.13
                 android:src="@drawable/berita_pemerintahan3" />
 
             <TextView
-
+                android:justificationMode="inter_word"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text="Soal Penanganan Covid-19 di Indonesia, Ini Kata Susi Pudjiastuti Kompas.com - 25/04/2020, 06:12 WIB
-
-Artikel ini telah tayang di Kompas.com dengan judul 'Soal Penanganan Covid-19 di Indonesia, Ini Kata Susi Pudjiastuti', https://money.kompas.com/read/2020/04/25/061200426/soal-penanganan-covid-19-di-indonesia-ini-kata-susi-pudjiastuti.
-            Penulis : Fika Nurul Ulya
-            Editor : Erlangga Djumena
-            JAKARTA, KOMPAS.com - Beberapa pihak mengkritik kinerja Pemerintah dalam menangani wabah virus corona (Covid-19) di Indonesia. Bahkan ada yang menilai pemerintah lalai. Namun menurut Menteri Kelautan dan Perikanan periode 2014-2019, Susi Pudjiastuti, tidak ada negara yang sempurna. Di masa pandemi, semua negara tengah belajar dan berbenah.
+                android:text="Soal Penanganan Covid-19 di Indonesia, Ini Kata Susi Pudjiastuti Kompas.com - 25/04/2020, 06:12 WIB Artikel ini telah tayang di Kompas.com dengan judul 'Soal Penanganan Covid-19 di Indonesia, Ini Kata Susi Pudjiastuti', https://money.kompas.com/read/2020/04/25/061200426/soal-penanganan-covid-19-di-indonesia-ini-kata-susi-pudjiastuti. Penulis : Fika Nurul Ulya Editor : Erlangga Djumena JAKARTA, KOMPAS.com - Beberapa pihak mengkritik kinerja Pemerintah dalam menangani wabah virus corona (Covid-19) di Indonesia. Bahkan ada yang menilai pemerintah lalai. Namun menurut Menteri Kelautan dan Perikanan periode 2014-2019, Susi Pudjiastuti, tidak ada negara yang sempurna. Di masa pandemi, semua negara tengah belajar dan berbenah.
             "
                 android:textColor="#f000"
                 android:textSize="12sp" />

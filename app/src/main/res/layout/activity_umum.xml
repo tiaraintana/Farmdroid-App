@@ -80,10 +80,10 @@
                 android:src="@drawable/umum1" />
 
             <TextView
-
+                android:justificationMode="inter_word"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
@@ -116,18 +116,14 @@
                 android:src="@drawable/umum2" />
 
             <TextView
-
+                android:justificationMode="inter_word"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text=" Wajah Muslim di Dunia Hadapi Ramadan di Tengah Pandemi COVID-19
-Liputan6.com, Jakarta Ramadan di tengah pandemi COVID-19 tak semarak seperti tahun-tahun sebelumnya. Masjid-masjid, termasuk Mekkah dan Madinah di Arab Saudi, kota paling suci dalam Islam yang biasanya dipenuhi umat Islam saat Ramadan kini ditutup.
-
-Begitupun dengan kegiatan keagamaan yang biasanya dilakukan umat muslim di masjid seperti salat tarawih, tadarus bahkan bermalam di masjid pun ditiadakan.
-"
+                android:text=" Wajah Muslim di Dunia Hadapi Ramadan di Tengah Pandemi COVID-19 Liputan6.com, Jakarta Ramadan di tengah pandemi COVID-19 tak semarak seperti tahun-tahun sebelumnya. Masjid-masjid, termasuk Mekkah dan Madinah di Arab Saudi, kota paling suci dalam Islam yang biasanya dipenuhi umat Islam saat Ramadan kini ditutup. Begitupun dengan kegiatan keagamaan yang biasanya dilakukan umat muslim di masjid seperti salat tarawih, tadarus bahkan bermalam di masjid pun ditiadakan."
                 android:textColor="#f000"
                 android:textSize="12sp" />
 
@@ -157,19 +153,15 @@ Begitupun dengan kegiatan keagamaan yang biasanya dilakukan umat muslim di masji
                 android:src="@drawable/umum3" />
 
             <TextView
-
+                android:justificationMode="inter_word"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text="Jaga Ketat Exit Tol Cileunyi, Polisi Halau Mobil Pemudik
-Muhammad Iqbal - detikNews
-Sabtu, 25 Apr 2020 11:28 WIB
-
-Kabupaten Bandung - Petugas gabungan terdiri personel Polresta Bandung dan Dishub Kabupaten Bandung menjaga ketat area exit Tol Cileunyi. Mereka menghalau kendaraan bermotor roda empat yang diketahui merupakan pemudik. Bahkan, petugas meminta mobil pemudik itu putar balik.
-Dari pantauan detikcom, Sabtu (25/4/2020), pukul 10.30 WIB, sejumlah petugas menanyakan keperluan pengendara. Petugas meminta pengendara menunjukkan kartu identitas dan surat kendaraan. Beberapa pengendara berniat mudik."
+                android:text="Jaga Ketat Exit Tol Cileunyi, Polisi Halau Mobil Pemudik. Muhammad Iqbal - detikNews. Sabtu, 25 Apr 2020 11:28 WIB. Kabupaten Bandung - Petugas gabungan terdiri personel Polresta Bandung dan Dishub Kabupaten Bandung menjaga ketat area exit Tol Cileunyi. Mereka menghalau kendaraan bermotor roda empat yang diketahui merupakan pemudik. Bahkan, petugas meminta mobil pemudik itu putar balik.
+                Dari pantauan detikcom, Sabtu (25/4/2020), pukul 10.30 WIB, sejumlah petugas menanyakan keperluan pengendara. Petugas meminta pengendara menunjukkan kartu identitas dan surat kendaraan. Beberapa pengendara berniat mudik."
                 android:textColor="#f000"
                 android:textSize="12sp" />
 

@@ -80,10 +80,10 @@
                 android:src="@drawable/perkembangan_teknologi_pertanian1" />
 
             <TextView
-
+                android:justificationMode="inter_word"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
@@ -118,14 +118,14 @@ Jika mendengar kata ‘teknologi’, pasti yang terlintas pertama kali adalah ga
                 android:src="@drawable/perkembangan_teknologi_pertanian2" />
 
             <TextView
-
+                android:justificationMode="inter_word"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text=" Teknologi pada awalnya dibuat oleh manusia untuk mempermudah berbagai pekerjaan yang dilakukan. Berbagai teknologi yang ditemukan oleh manusia berkembang pesat dalam 100 tahun ini, mulai dari bidang transportasi hingga informasi, tidak terkecuali dunia pertanian.
+                android:text="Teknologi pada awalnya dibuat oleh manusia untuk mempermudah berbagai pekerjaan yang dilakukan. Berbagai teknologi yang ditemukan oleh manusia berkembang pesat dalam 100 tahun ini, mulai dari bidang transportasi hingga informasi, tidak terkecuali dunia pertanian.
 
 Perkembangan teknologi pertanian di Indonesia sebenarnya sudah sangat lama, berbagai alat pertanian seperti cangkul, garu, waluku (alat bajak), sabit, hingga ani-ani mungkin bisa dijadikan contoh teknologi pertanian yang pada zamannya sangat membantu kehidupan petani. Sejak manusia mengembangkan mesin-mesin pertanian, perlahan tapi pasti, teknologi pertanian yang sederhana mulai ditinggalkan karena dianggap tidak produktif
 "
@@ -158,10 +158,10 @@ Perkembangan teknologi pertanian di Indonesia sebenarnya sudah sangat lama, berb
                 android:src="@drawable/perkembangan_teknologi_pertanian3" />
 
             <TextView
-
+                android:justificationMode="inter_word"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
