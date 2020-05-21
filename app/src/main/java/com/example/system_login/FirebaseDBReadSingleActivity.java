@@ -10,7 +10,7 @@ import android.widget.EditText;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.system_login.model.Barang;
+import com.example.system_login.model.Data;
 
 public class FirebaseDBReadSingleActivity extends AppCompatActivity {
 
@@ -33,11 +33,11 @@ public class FirebaseDBReadSingleActivity extends AppCompatActivity {
         etHarga.setEnabled(false);
         btSubmit.setVisibility(View.GONE);
 
-        Barang barang = (Barang) getIntent().getSerializableExtra("data");
+        Data barang = (Data) getIntent().getSerializableExtra("data");
         if(barang!=null){
-            etNama.setText(barang.getNama());
-            etMerk.setText(barang.getMerk());
-            etHarga.setText(barang.getHarga());
+            etNama.setText(barang.getTanggal());
+            etMerk.setText(barang.getJudul());
+            etHarga.setText(barang.getNote());
         }
     }
 

@@ -15,17 +15,17 @@ import com.example.system_login.FirebaseDBCreateActivity;
 import com.example.system_login.FirebaseDBReadActivity;
 import com.example.system_login.FirebaseDBReadSingleActivity;
 import com.example.system_login.R;
-import com.example.system_login.model.Barang;
+import com.example.system_login.model.Data;
 
 import java.util.ArrayList;
 
 public class AdapterBarangRecycleView extends RecyclerView.Adapter<AdapterBarangRecycleView.ViewHolder> {
 
-    private ArrayList<Barang> daftarBarang;
+    private ArrayList<Data> daftarBarang;
     private Context context;
     FirebaseDBReadActivity listener;
 
-    public AdapterBarangRecycleView(ArrayList<Barang> barangs, Context ctx){
+    public AdapterBarangRecycleView(ArrayList<Data> barangs, Context ctx){
         /**
          * Inisiasi data dan variabel yang akan digunakan
          */
@@ -65,7 +65,7 @@ public class AdapterBarangRecycleView extends RecyclerView.Adapter<AdapterBarang
         /**
          *  Menampilkan data pada view
          */
-        final String name = daftarBarang.get(position).getNama();
+        final String name = daftarBarang.get(position).getTanggal();
         System.out.println("BARANG DATA one by one "+position+daftarBarang.size());
         holder.tvTitle.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -126,6 +126,6 @@ public class AdapterBarangRecycleView extends RecyclerView.Adapter<AdapterBarang
     }
 
     public interface FirebaseDataListener{
-        void onDeleteData(Barang barang, int position);
+        void onDeleteData(Data barang, int position);
     }
 }

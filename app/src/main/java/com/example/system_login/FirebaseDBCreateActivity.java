@@ -13,7 +13,7 @@ import android.widget.EditText;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.system_login.model.Barang;
+import com.example.system_login.model.Data;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.database.DatabaseReference;
@@ -44,18 +44,18 @@ public class FirebaseDBCreateActivity extends AppCompatActivity {
         // mengambil referensi ke Firebase Database
         database = FirebaseDatabase.getInstance().getReference();
 
-        final Barang barang = (Barang) getIntent().getSerializableExtra("data");
+        final Data barang = (Data) getIntent().getSerializableExtra("data");
 
         if (barang != null) {
-            etNama.setText(barang.getNama());
-            etMerk.setText(barang.getMerk());
-            etHarga.setText(barang.getHarga());
+            etNama.setText(barang.getTanggal());
+            etMerk.setText(barang.getJudul());
+            etHarga.setText(barang.getNote());
             btSubmit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    barang.setNama(etNama.getText().toString());
-                    barang.setMerk(etMerk.getText().toString());
-                    barang.setHarga(etHarga.getText().toString());
+                    barang.setTanggal(etNama.getText().toString());
+                    barang.setJudul(etMerk.getText().toString());
+                    barang.setNote(etHarga.getText().toString());
 
                     updateBarang(barang);
                 }
@@ -65,7 +65,7 @@ public class FirebaseDBCreateActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     if (!isEmpty(etNama.getText().toString()) && !isEmpty(etMerk.getText().toString()) && !isEmpty(etHarga.getText().toString()))
-                        submitBarang(new Barang(etNama.getText().toString(), etMerk.getText().toString(), etHarga.getText().toString()));
+                        submitBarang(new Data(etNama.getText().toString(), etMerk.getText().toString(), etHarga.getText().toString()));
                     else
                         Snackbar.make(findViewById(R.id.bt_submit), "Data barang tidak boleh kosong", Snackbar.LENGTH_LONG).show();
 
@@ -83,7 +83,7 @@ public class FirebaseDBCreateActivity extends AppCompatActivity {
         return TextUtils.isEmpty(s);
     }
 
-    private void updateBarang(Barang barang) {
+    private void updateBarang(Data barang) {
         /**
          * Baris kode yang digunakan untuk mengupdate data barang
          * yang sudah dimasukkan di Firebase Realtime Database
@@ -108,7 +108,7 @@ public class FirebaseDBCreateActivity extends AppCompatActivity {
                 });
     }
 
-    private void submitBarang(Barang barang) {
+    private void submitBarang(Data barang) {
         /**
          * Ini adalah kode yang digunakan untuk mengirimkan data ke Firebase Realtime Database
          * dan juga kita set onSuccessListener yang berisi kode yang akan dijalankan

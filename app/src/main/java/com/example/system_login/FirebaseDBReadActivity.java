@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.system_login.Adapter.AdapterBarangRecycleView;
-import com.example.system_login.model.Barang;
+import com.example.system_login.model.Data;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -30,7 +30,7 @@ public class FirebaseDBReadActivity extends AppCompatActivity implements Adapter
     private RecyclerView rvView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
-    private ArrayList<Barang> daftarBarang;
+    private ArrayList<Data> daftarBarang;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -70,7 +70,7 @@ public class FirebaseDBReadActivity extends AppCompatActivity implements Adapter
                      * Dan juga menyimpan primary key pada object Barang
                      * untuk keperluan Edit dan Delete data
                      */
-                    Barang barang = noteDataSnapshot.getValue(Barang.class);
+                    Data barang = noteDataSnapshot.getValue(Data.class);
                     barang.setKey(noteDataSnapshot.getKey());
 
                     /**
@@ -104,7 +104,7 @@ public class FirebaseDBReadActivity extends AppCompatActivity implements Adapter
     }
 
     @Override
-    public void onDeleteData(Barang barang, final int position) {
+    public void onDeleteData(Data barang, final int position) {
         /**
          * Kode ini akan dipanggil ketika method onDeleteData
          * dipanggil dari adapter lewat interface.
