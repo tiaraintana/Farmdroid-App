@@ -55,7 +55,7 @@
         android:textStyle="italic"
         android:text="1.Menambahkan Data\n"
         android:textColor="#f000"
-        android:textSize="12sp" />
+        android:textSize="15dp" />
 
 
     <TextView
@@ -68,7 +68,7 @@
         android:text="menekan tombol Tambah data kemudian mengisikan data apa yang ingin
 ditambahkan\n"
         android:textColor="#f000"
-        android:textSize="12sp" />
+        android:textSize="15dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -80,7 +80,7 @@ ditambahkan\n"
         android:text="2.Melihat Data\n"
         android:textStyle="italic"
         android:textColor="#f000"
-        android:textSize="12sp" />
+        android:textSize="15dp" />
 
 
     <TextView
@@ -92,7 +92,7 @@ ditambahkan\n"
         android:scrollbars="vertical"
         android:text="menekan tombol rekap data. maka akan menampilkan judul rekap data anda jika ingin melihat rincian maka silahkan klik salah satu judul rekap data anda\n"
         android:textColor="#f000"
-        android:textSize="12sp" />
+        android:textSize="15dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -103,7 +103,7 @@ ditambahkan\n"
         android:scrollbars="vertical"
         android:text="3.Menghapus dan Mengedit Data\n"
         android:textColor="#f000"
-        android:textSize="12sp" />
+        android:textSize="15dp" />
 
 
     <TextView
@@ -116,7 +116,8 @@ ditambahkan\n"
         android:scrollbars="vertical"
         android:text="tekan judul yang ada pada rekap data agak lama maka akan muncul dialog view untuk mengupdate dan menghapus data"
         android:textColor="#f000"
-        android:textSize="12sp" />
+        android:layout_marginBottom="50dp"
+        android:textSize="15dp" />
         </LinearLayout>
     </ScrollView>
 
