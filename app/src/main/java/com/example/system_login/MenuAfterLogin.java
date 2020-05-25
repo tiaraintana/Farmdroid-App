@@ -25,7 +25,7 @@ import com.google.firebase.database.ValueEventListener;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MenuAfterLogin extends AppCompatActivity {
-    ImageView Daftar, TtgProgram, HalamanBerita, scanner, RekapData;
+    ImageView Daftar, TtgProgram, HalamanBerita, scanner, RekapData, Konsultasi;
 
 
     @Override
@@ -38,6 +38,7 @@ public class MenuAfterLogin extends AppCompatActivity {
         HalamanBerita = findViewById(R.id.berita);
         scanner = findViewById(R.id.scanner_padi);
         RekapData =findViewById(R.id.rekap_data);
+        Konsultasi = findViewById(R.id.konsultasi);
 
         Daftar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +76,14 @@ public class MenuAfterLogin extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MenuAfterLogin.this, MainActivityRekap.class);
+                startActivity(intent);
+            }
+        });
+
+        Konsultasi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuAfterLogin.this, mainConsult.class);
                 startActivity(intent);
             }
         });

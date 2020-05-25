@@ -11,6 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".PetunjukKonsultasi"></activity>
+        <activity android:name=".konsul7" />
+        <activity android:name=".konsul6" />
+        <activity android:name=".konsul5" />
+        <activity android:name=".konsul4_2" />
+        <activity android:name=".konsul4_1" />
+        <activity android:name=".konsul4" />
+        <activity android:name=".konsul3" />
+        <activity android:name=".konsul2" />
+        <activity android:name=".konsul1" />
+        <activity android:name=".mainConsult" />
         <activity android:name=".PetunjukFiturRekapData" />
         <activity android:name=".MainActivityRekap" />
         <activity android:name=".FirebaseDBReadActivity" />
