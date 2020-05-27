@@ -35,7 +35,9 @@
         <activity android:name=".Pemerintah" />
         <activity android:name=".PerkembanganTeknologi" />
         <activity android:name=".PermasalahanPertanian" />
-        <activity android:name=".HalamanNews" />
+        <activity
+            android:name=".HalamanNews"
+            android:screenOrientation="fullSensor" />
         <activity android:name=".MenuAfterLogin" />
         <activity android:name=".PengendalianTungro" />
         <activity android:name=".PengendalianBusukpelepah" />
