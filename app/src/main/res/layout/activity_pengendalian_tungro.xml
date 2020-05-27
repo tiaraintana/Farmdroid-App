@@ -18,7 +18,7 @@
             <TextView
                 android:id="@+id/nama"
                 android:layout_width="269dp"
-                android:layout_height="77dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="56dp"
                 android:gravity="center_horizontal"
@@ -31,13 +31,14 @@
 
             <TextView
                 android:id="@+id/ciri"
+                android:justificationMode="inter_word"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="56dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text="Pengendalian Penyakit Tungro\n\n1. Tanam serempak.
+                android:text="Pengendalian Penyakit Tungro :\n\n1. Tanam serempak.
                 \n2. Mengatur waktu tanam yang tepat \nPada saat populasi wereng hijau mencapai puncaknya, tanaman padiyang berumur kurang dari 45 hari setelah tanam sangat terancam oleh serangan tungro. Dengan demikian waktu tanam yang tepat adalah 30-45 hari sebelum puncak curah hujan."
                 android:textColor="#f000"
                 android:textSize="18sp" />

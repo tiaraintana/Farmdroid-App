@@ -24,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:layout_gravity="center"
         android:padding="20dp"
         android:paddingBottom="50dp"
         android:text="HALAMAN PETUNJUK FITUR REKAP DATA"

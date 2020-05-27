@@ -41,25 +41,27 @@
                 android:scrollbars="vertical"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:text="Penyebab : \nSclerotium oryzae Cattaneo\nHelminthosporium sigmoideum\n"
+                android:text="Penyebab : \nSclerotium oryzae Cattaneo\nHelminthosporium sigmoideum.\n"
                 android:textColor="#f000"
                 android:layout_marginTop="40dp"
                 android:textSize="18sp" />
 
             <TextView
+                android:justificationMode="inter_word"
                 android:id="@+id/ciri"
                 android:layout_width="match_parent"
                 android:layout_height="194dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text="Ciri-Ciri Busuk Batang pada Padi\n\n1. Bercak berwarna hitam\n2. Bentuk bercak tidak teratur  pada sisi luar pelapah daun dan secara bertahap membesar.\n3. Batang menjadi lemah, dan anakan mati.\n4. Tanaman menjadi rebah"
+                android:text="Ciri-Ciri Busuk Batang pada Padi :\n\n1. Bercak berwarna hitam.\n2. Bentuk bercak tidak teratur  pada sisi luar pelapah daun dan secara bertahap membesar.\n3. Batang menjadi lemah, dan anakan mati.\n4. Tanaman menjadi rebah."
                 android:textColor="#f000"
                 android:textSize="18sp" />
             <Button
                 android:layout_width="234dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
                 android:text="CARA PENGENDALIAN"
                 android:background="@drawable/button_register"
                 android:textColor="#ffffff"

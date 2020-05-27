@@ -53,16 +53,17 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text="Ciri-Ciri Busuk Pelepah pada Padi\n\n1. Muncul noda bulat memanjang berwarna abu abu dibagian tengah\n2. Muncul noda coklat dibagian pinggir"
+                android:text="Ciri-Ciri Busuk Pelepah pada Padi :\n\n1. Muncul noda bulat memanjang berwarna abu abu dibagian tengah.\n2. Muncul noda coklat dibagian pinggir."
                 android:textColor="#f000"
                 android:textSize="18sp" />
             <Button
                 android:layout_width="234dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
                 android:text="CARA PENGENDALIAN"
                 android:background="@drawable/button_register"
-                android:textColor="#EFE6E6"
+                android:textColor="#ffffff"
                 android:textSize="18sp"
                 android:onClick="Pindah"/>
         </LinearLayout>

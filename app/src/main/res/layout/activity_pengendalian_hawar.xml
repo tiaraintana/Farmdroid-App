@@ -29,7 +29,7 @@
 
             <ImageView
                 android:layout_width="343dp"
-                android:layout_height="233dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center_horizontal"
                 android:src="@drawable/p1" />
@@ -42,7 +42,7 @@
                 android:layout_marginTop="56dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text="Pengendalian Penyakit Hawar Daun Bakteri\n\n1. Pengaturan air yang cukup\n2. Hindari penggenangan air yang terus menerus\n3. menggunakan pola tanam yang mempunyai sirkulasi udara yang lebih baik"
+                android:text="Pengendalian Penyakit Hawar Daun Bakteri :\n\n1. Pengaturan air yang cukup.\n2. Hindari penggenangan air yang terus menerus.\n3. Menggunakan pola tanam yang mempunyai sirkulasi udara yang lebih baik."
                 android:textColor="#f000"
                 android:textSize="18sp" />
         </LinearLayout>

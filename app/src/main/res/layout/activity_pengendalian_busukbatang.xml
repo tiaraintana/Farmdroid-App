@@ -18,12 +18,12 @@
             <TextView
                 android:id="@+id/nama"
                 android:layout_width="267dp"
-                android:layout_height="98dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="56dp"
                 android:gravity="center_horizontal"
                 android:scrollbars="vertical"
-                android:text="CARA MENGATASI BUSUK BATNG !!!"
+                android:text="CARA MENGATASI BUSUK BATANG !!!"
                 android:textColor="#f000"
                 android:textSize="20sp" />
 
@@ -37,8 +37,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text="Pengendalian Penyakit Busuk Batang\n\n1. Pengendalian secara fisik bisa dengan cara pengeringan petakan dan biarkan tanah hingga retak sebelum dialiri lagi.
-                \n2. Di samping itu tunggul - tunggul padi sesudah panen harus dibakar atau didekomposisi"
+                android:text="Pengendalian Penyakit Busuk Batang :\n\n1. Pengendalian secara fisik bisa dengan cara pengeringan petakan dan biarkan tanah hingga retak sebelum dialiri lagi.
+                \n2. Di samping itu tunggul - tunggul padi sesudah panen harus dibakar atau didekomposisi."
                 android:textColor="#f000"
                 android:textSize="18sp" />
         </LinearLayout>

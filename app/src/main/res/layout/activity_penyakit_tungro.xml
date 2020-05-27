@@ -47,22 +47,24 @@
                 android:textSize="18sp" />
 
             <TextView
+                android:justificationMode="inter_word"
                 android:id="@+id/ciri"
                 android:layout_width="match_parent"
                 android:layout_height="202dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text="Ciri-Ciri Tungro pada Padi\n\n1. Tanaman berubah menjadi kerdil\n2. Anakan padi berkurang\n3. Daun menguning dari pucuk sampai ke batang\n4. Malai kecil dan padi hampa"
+                android:text="Ciri-Ciri Tungro pada Padi :\n\n1. Tanaman berubah menjadi kerdil.\n2. Anakan padi berkurang.\n3. Daun menguning dari pucuk sampai ke batang.\n4. Malai kecil dan padi hampa."
                 android:textColor="#f000"
                 android:textSize="18sp" />
             <Button
                 android:layout_width="234dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
                 android:text="CARA PENGENDALIAN"
                 android:background="@drawable/button_register"
-                android:textColor="#EFE6E6"
+                android:textColor="#ffffff"
                 android:textSize="18sp"
                 android:onClick="Kendalipindah"/>
         </LinearLayout>

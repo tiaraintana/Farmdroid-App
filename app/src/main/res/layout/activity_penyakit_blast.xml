@@ -48,13 +48,14 @@
                 android:textSize="18sp" />
 
             <TextView
+                android:justificationMode="inter_word"
                 android:id="@+id/ciri2"
                 android:layout_width="match_parent"
-                android:layout_height="228dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text="Ciri-Ciri Blast pada Padi\n\n1. Pada fase pertumbuhan\nTimbul bercak berbentuk belah ketupat pada daun padi\n2.Pada fase generatif\nPada fase ini menyerang bagian tangkai malai, hingga menimbulkan gelaja berwarna coklat pada malai padi."
+                android:text="Ciri-Ciri Blast pada Padi :\n\n1. Pada fase pertumbuhan\nTimbul bercak berbentuk belah ketupat pada daun padi.\n2. Pada fase generatif\nPada fase ini menyerang bagian tangkai malai, hingga menimbulkan gelaja berwarna coklat pada malai padi."
                 android:textColor="#f000"
                 android:textSize="18sp" />
 
@@ -62,6 +63,7 @@
                 android:layout_width="234dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/button_register"
                 android:onClick="Kendali"
                 android:text="CARA PENGENDALIAN"

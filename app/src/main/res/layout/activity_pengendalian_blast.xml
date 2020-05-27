@@ -18,7 +18,7 @@
             <TextView
                 android:id="@+id/nama"
                 android:layout_width="280dp"
-                android:layout_height="85dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="56dp"
                 android:gravity="center_horizontal"
@@ -37,7 +37,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text="Pengendalian Penyakit Blast\n\n1. Gunakan varietas tahan sesuai dengan sebaran ras yang ada di daerah setempat.
+                android:text="Pengendalian Penyakit Blast :\n\n1. Gunakan varietas tahan sesuai dengan sebaran ras yang ada di daerah setempat.
                  \n2. Gunakan benih sehat.\n3. Hidarkan penggunaan pupuk nitrogen diatas dosis anjuran.
                  \n4. Sanitasi lingkungan harus intensif karena inang alternatif patogen dapat berupa rerumputan.
                  \n5. Hindari tanam padi terlambat dari tanaman  petani di sekitarnya."

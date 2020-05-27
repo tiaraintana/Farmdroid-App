@@ -18,7 +18,7 @@
             <TextView
                 android:id="@+id/nama"
                 android:layout_width="267dp"
-                android:layout_height="113dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="56dp"
                 android:gravity="center_horizontal"
@@ -37,7 +37,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text="Pengendalian Penyakit Busuk Pelepah daun\n\n1. Gunakan padi yang tahan terhadap penyakit
+                android:text="Pengendalian Penyakit Busuk Pelepah Daun :\n\n1. Gunakan padi yang tahan terhadap penyakit.
                 \n2. Lakukan pengendalian penyakit dengan cara menyemprotkan fungsida pada saat pembentukan anakan padi."
                 android:textColor="#f000"
                 android:textSize="18sp" />

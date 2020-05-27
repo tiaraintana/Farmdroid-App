@@ -41,25 +41,27 @@
                 android:scrollbars="vertical"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:text="Penyebab : \njamur Helmintosporium oryzae.\n"
+                android:text="Penyebab : \nJamur Helmintosporium oryzae.\n"
                 android:textColor="#f000"
                 android:layout_marginTop="56dp"
                 android:textSize="18sp" />
 
             <TextView
+                android:justificationMode="inter_word"
                 android:id="@+id/ciri"
                 android:layout_width="match_parent"
-                android:layout_height="218dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text="Ciri-Ciri Bercak Daun pada Padi\n\n1. Biji padi busuk saat berkecambah\n2. Tanaman busuk dan kering\n3. biji bercak-bercak tetapi tetap berisi"
+                android:text="Ciri-Ciri Bercak Daun pada Padi :\n\n1. Biji padi busuk saat berkecambah.\n2. Tanaman busuk dan kering.\n3. Biji bercak-bercak tetapi tetap berisi."
                 android:textColor="#f000"
                 android:textSize="18sp" />
             <Button
                 android:layout_width="234dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="113dp"
                 android:text="CARA PENGENDALIAN"
                 android:background="@drawable/button_register"
                 android:textColor="#ffffff"

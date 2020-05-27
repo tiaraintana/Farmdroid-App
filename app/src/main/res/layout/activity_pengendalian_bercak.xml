@@ -18,7 +18,7 @@
             <TextView
                 android:id="@+id/nama"
                 android:layout_width="302dp"
-                android:layout_height="75dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="56dp"
                 android:gravity="center_horizontal"
@@ -31,14 +31,15 @@
 
             <TextView
                 android:id="@+id/ciri"
+                android:justificationMode="inter_word"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="56dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text="Pengendalian Penyakit Bercak Daun\n
-                            \n1. Pengendalian dengan 3 kali penyemprotan yaitu  pada  fase  anakan  maksimum, awal pembungaan  dan  awal  pengisian  dengan fungisida benomil, mankozeb, carbendazim atau difenoconazol dengan dosis 1 cc per 1 liter air, dengan volume semprot 500 liter/ha,  dapat   menekan   perkembangan penyakit  bercak  daun   cercospora   dan menekan kehilangan hasil padi sampai dengan 30%.."
+                android:text="Pengendalian Penyakit Bercak Daun :\n
+                            \nPengendalian dengan 3 kali penyemprotan yaitu  pada  fase  anakan  maksimum, awal pembungaan  dan  awal  pengisian  dengan fungisida benomil, mankozeb, carbendazim atau difenoconazol dengan dosis 1 cc per 1 liter air, dengan volume semprot 500 liter/ha,  dapat   menekan   perkembangan penyakit  bercak  daun   cercospora   dan menekan kehilangan hasil padi sampai dengan 30%."
                 android:textColor="#f000"
                 android:textSize="18sp" />
         </LinearLayout>

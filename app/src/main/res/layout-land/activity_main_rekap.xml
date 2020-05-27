@@ -9,16 +9,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivityRekap">
 
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="95dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:layout_gravity="center"
         android:padding="20dp"
         android:paddingBottom="50dp"
         android:text="Selamat Datang Pada Fitur\n'Rekap Data'"
         android:textAlignment="center"
-        android:layout_gravity="center"
         android:textColor="#000000"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -26,7 +33,7 @@
         android:gravity="center_horizontal" />
 
     <ImageView
-        android:layout_width="343dp"
+        android:layout_width="wrap_content"
         android:layout_height="233dp"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
@@ -40,7 +47,8 @@
     <Button
         android:layout_margin="5dp"
         android:id="@+id/bt_PetunjukPenggunaan"
-        android:layout_width="match_parent"
+        android:layout_width="343dp"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:background="@drawable/button_register"
         android:text="Petunjuk Penggunaan Fitur" />
@@ -48,7 +56,8 @@
     <Button
         android:layout_margin="5dp"
         android:id="@+id/bt_createdata"
-        android:layout_width="match_parent"
+        android:layout_width="343dp"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:background="@drawable/button_register"
         android:text="Masuk Data Hari Ini" />
@@ -56,10 +65,12 @@
     <Button
         android:layout_margin="5dp"
         android:id="@+id/bt_viewdata"
-        android:layout_width="match_parent"
+        android:layout_width="343dp"
+        android:layout_gravity="center"
         android:background="@drawable/button_register"
         android:layout_height="wrap_content"
         android:text="Lihat Rekap Data" />
-
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
