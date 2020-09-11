@@ -16,10 +16,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.example.system_login.helper.TFLiteHelper;
+
+import java.util.List;
+
 public class ScanActivity extends AppCompatActivity {
 
     ImageView imageView;
     Button btOpen, detect, daftar_penyakit;
+
+    TFLiteHelper tfLiteHelper;
+    Bitmap captureimage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +38,8 @@ public class ScanActivity extends AppCompatActivity {
         detect = findViewById(R.id.detect);
         daftar_penyakit = findViewById(R.id.daftar_penyakit);
 
+        tfLiteHelper = new TFLiteHelper(this);
+        tfLiteHelper.init();
 
         if(ContextCompat.checkSelfPermission(ScanActivity.this,
                 Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
@@ -49,9 +58,10 @@ public class ScanActivity extends AppCompatActivity {
         detect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(ScanActivity.this);
-                builder.setMessage("Tidak Bisa Mendapatkan Objek Padi!!!")
-                        .setNegativeButton("Retry", null).create().show();
+                if (captureimage != null) {
+                    tfLiteHelper.classifyImage(captureimage);
+                    setLabel(tfLiteHelper.showresult());
+                }
             }
         });
         btOpen.setOnClickListener(new View.OnClickListener() {
@@ -67,8 +77,20 @@ public class ScanActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 100) {
-            Bitmap captureimage = (Bitmap) data.getExtras().get("data");
-            imageView.setImageBitmap(captureimage);
+            try {
+                captureimage = (Bitmap) data.getExtras().get("data");
+                imageView.setImageBitmap(captureimage);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    void setLabel(List<String> entries) {
+        for (String entry : entries) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(ScanActivity.this);
+            builder.setMessage("Classified as: " + entry)
+                    .setNegativeButton("Retry", null).create().show();
         }
     }
 }
