@@ -32,7 +32,7 @@
         android:justificationMode="inter_word"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Aplikasi ini dibuat sebagai persyaratan untuk mengerjakan tugas besar mata kuliah Pemrograman Mobile di Jurusan Teknik Informatika, Universitas Muhammadiyah Malang"
+        android:text="Farmdroid adalah aplikasi berbasis android yang dapat dioperasikan petani untuk mengetahui penyakit padi sejak dini dengan memanfaatkan fitur scanner pada aplikasi ini, serta sebagai media penyalur informasi bermutu untuk para petani."
         android:textColor="#f000"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
@@ -42,7 +42,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Disusun Oleh :\n\nTiara Intana Sari \nUlfah Nur Oktaviana \nNaufaldi Izad Fimana \nGanang Abdi"
+        android:text="Disusun Oleh :\n\nTiara Intana Sari \nUlfah Nur Oktaviana \nNaufaldi Izad Fimana"
         android:textAlignment="center"
         android:textColor="#f000"
         android:layout_marginRight="20dp"
@@ -82,7 +82,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="25dp"
-        android:text="Cara Penggunaan :\nMemanfaatkan kamera pada smartphone untuk secara otomatis sistem ini akan mendeteksi mengenai perlakuan yang harus Anda berikan terhadap perkembangan padi itu sendiri. Selain itu fitur yang disediakan oleh sistem pakar ini juga mampu membantu Anda untuk mengatasi segala permasalahan padi seperti : \n\n1. Fitur News \n2. Fitur Tentang Penyakit \n3. Fitur Chatbot \n4. Fitur Konsultasi \n5. Fitur Scanner \n6. Fitur Rekap Data "
+        android:text="Cara Penggunaan :\nMemanfaatkan kamera pada smartphone untuk secara otomatis sistem ini akan mendeteksi mengenai perlakuan yang harus Anda berikan terhadap perkembangan padi itu sendiri. Selain itu fitur yang disediakan oleh sistem pakar ini juga mampu membantu Anda untuk mengatasi segala permasalahan padi seperti : \n\n1. Fitur News \n2. Fitur Tentang Penyakit \n3. Fitur Scanner \n4. Fitur Konsultasi \n5. Fitur Rekap Data "
         android:textColor="#f000"
         android:textSize="25dp" />
         </LinearLayout>
