@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/land_scape"
+    tools:context=".HomeActivity">
+
+
+    <ImageView
+        android:id="@+id/dftr_penyakit"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/ttg_program"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/button_daftar_penyakit" />
+
+    <ImageView
+        android:id="@+id/scanner_padi"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/rekap_data"
+        app:layout_constraintStart_toEndOf="@+id/dftr_penyakit"
+        app:srcCompat="@drawable/button_scanner_padi" />
+
+    <ImageView
+        android:id="@+id/konsultasi"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/berita"
+        app:layout_constraintStart_toEndOf="@+id/scanner_padi"
+        app:srcCompat="@drawable/button_konsultasi" />
+
+            <ImageView
+                android:id="@+id/ttg_program"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="16dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/button_tentang_program" />
+
+    <ImageView
+        android:id="@+id/rekap_data"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ttg_program"
+        app:srcCompat="@drawable/button_rekap_data" />
+
+    <ImageView
+        android:id="@+id/berita"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rekap_data"
+        app:srcCompat="@drawable/button_news" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

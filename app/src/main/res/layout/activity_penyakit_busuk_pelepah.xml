@@ -2,10 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/animation"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/animation"
-    tools:context=".rice_desease_activity.PenyakitTungroActivity">
+    tools:context=".rice_desease_activity.PenyakitBusukPelepahActivity">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,44 +17,43 @@
 
             <TextView
                 android:id="@+id/nama"
-                android:layout_width="214dp"
+                android:layout_width="wrap_content"
                 android:layout_height="54dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="56dp"
                 android:gravity="center_horizontal"
                 android:scrollbars="vertical"
-                android:text="TUNGRO"
+                android:text="BUSUK PELEPAH"
                 android:textColor="#f000"
-                android:textSize="27sp" />
+                android:textSize="20sp" />
 
             <ImageView
                 android:layout_width="343dp"
                 android:layout_height="233dp"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center_horizontal"
-                android:src="@drawable/tungro" />
+                android:src="@drawable/busukpelepah" />
 
             <TextView
                 android:id="@+id/sebab"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
                 android:scrollbars="vertical"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:text="Penyebab : \nWereng Hijau (Nephotettix impicticeps).\n"
+                android:text="Penyebab : \nJamur Rhizoctonia sp.\n"
                 android:textColor="#f000"
-                android:layout_marginTop="56dp"
                 android:textSize="18sp" />
 
             <TextView
-                android:justificationMode="inter_word"
                 android:id="@+id/ciri"
                 android:layout_width="match_parent"
-                android:layout_height="202dp"
+                android:layout_height="203dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:scrollbars="vertical"
-                android:text="Ciri-Ciri Tungro pada Padi :\n\n1. Tanaman berubah menjadi kerdil.\n2. Anakan padi berkurang.\n3. Daun menguning dari pucuk sampai ke batang.\n4. Malai kecil dan padi hampa."
+                android:text="Ciri-Ciri Busuk Pelepah pada Padi :\n\n1. Muncul noda bulat memanjang berwarna abu abu dibagian tengah.\n2. Muncul noda coklat dibagian pinggir."
                 android:textColor="#f000"
                 android:textSize="18sp" />
             <Button
@@ -66,7 +65,7 @@
                 android:background="@drawable/button_register"
                 android:textColor="#ffffff"
                 android:textSize="18sp"
-                android:onClick="Kendalipindah"/>
+                android:onClick="Pindah"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

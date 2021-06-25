@@ -11,61 +11,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PetunjukKonsultasi"></activity>
-        <activity android:name=".konsul7" />
-        <activity android:name=".konsul6" />
-        <activity android:name=".konsul5" />
-        <activity android:name=".konsul4_2" />
-        <activity android:name=".konsul4_1" />
-        <activity android:name=".konsul4" />
-        <activity android:name=".konsul3" />
-        <activity android:name=".konsul2" />
-        <activity android:name=".konsul1" />
-        <activity android:name=".mainConsult" />
-        <activity android:name=".PetunjukFiturRekapData" />
-        <activity android:name=".MainActivityRekap" />
-        <activity android:name=".FirebaseDBReadActivity" />
-        <activity android:name=".FirebaseDBReadSingleActivity" />
-        <activity android:name=".FirebaseDBCreateActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".ScanActivity" />
-        <activity android:name=".berita1" />
-        <activity android:name=".Umum" />
-        <activity android:name=".PermasalahanHama" />
-        <activity android:name=".Pemerintah" />
-        <activity android:name=".PerkembanganTeknologi" />
-        <activity android:name=".PermasalahanPertanian" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".scanner_page.ScanActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".rice_desease_activity.pengendalian.PengendalianTungroActivity" />
+        <activity android:name=".rice_desease_activity.pengendalian.PengendalianBusukPelepahActivity" />
+        <activity android:name=".rice_desease_activity.pengendalian.PengendalianBusukBatangActivity" />
+        <activity android:name=".rice_desease_activity.pengendalian.PengendalianBercakActivity" />
+        <activity android:name=".rice_desease_activity.pengendalian.PengendalianHawarActivity" />
+        <activity android:name=".rice_desease_activity.pengendalian.PengendalianBlastActivity" />
+        <activity android:name=".rice_desease_activity.PenyakitBusukPelepahActivity" />
+        <activity android:name=".rice_desease_activity.PenyakitTungroActivity" />
+        <activity android:name=".rice_desease_activity.PenyakitBusukBatangActivity" />
+        <activity android:name=".rice_desease_activity.PenyakitBercakActivity" />
+        <activity android:name=".rice_desease_activity.PenyakitBlastActivity" />
+        <activity android:name=".rice_desease_activity.PenyakitHawarActivity" />
         <activity
-            android:name=".HalamanNews"
-            android:screenOrientation="fullSensor" />
-        <activity android:name=".MenuAfterLogin" />
-        <activity android:name=".PengendalianTungro" />
-        <activity android:name=".PengendalianBusukpelepah" />
-        <activity android:name=".PengendalianBusukbatang" />
-        <activity android:name=".PengendalianBercak" />
-        <activity android:name=".PengendalianHawar" />
-        <activity android:name=".PengendalianBlast" />
-        <activity android:name=".BusukPelepah" />
-        <activity android:name=".PenyakitTungro" />
-        <activity android:name=".PenyakitBusukbatang" />
-        <activity android:name=".PenyakitBercak" />
-        <activity android:name=".PenyakitBlast" />
-        <activity android:name=".PenyakitHawar" />
-        <activity
-            android:name=".TentangPenyakit"
+            android:name=".DaftarPenyakitActivity"
             android:screenOrientation="fullSensor" />
         <activity
-            android:name=".TentangAplikasi"
+            android:name=".AboutAppActivity"
             android:screenOrientation="fullSensor" />
         <activity
             android:name=".RegistrasiActivity"
             android:screenOrientation="fullSensor" />
         <activity
-            android:name=".welcomeScreen"
+            android:name=".SplashscreenActivity"
             android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

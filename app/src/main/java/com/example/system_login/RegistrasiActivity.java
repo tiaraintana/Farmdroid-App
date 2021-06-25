@@ -54,7 +54,7 @@ public class RegistrasiActivity extends AppCompatActivity {
                     Toast.makeText(RegistrasiActivity.this, "All Fileds are required", Toast.LENGTH_SHORT).show();
                 } else if(txt_password.length() < 6){
                     Toast.makeText(RegistrasiActivity.this, "password must be at least 6 character", Toast.LENGTH_SHORT).show();
-                } else if(txt_confirmpassword.compareTo(txt_password)==1){
+                } else if(txt_confirmpassword.compareTo(txt_password) == 1){
                     Toast.makeText(RegistrasiActivity.this, "Please Check your password again", Toast.LENGTH_SHORT).show();
                 }
                 else {
@@ -83,7 +83,7 @@ public class RegistrasiActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()){
-                                Intent intent = new Intent(RegistrasiActivity.this, MainActivity.class);
+                                Intent intent = new Intent(RegistrasiActivity.this, LoginActivity.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                 startActivity(intent);
                                 finish();
