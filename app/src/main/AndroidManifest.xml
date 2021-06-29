@@ -11,38 +11,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".ui.LoginActivity" />
         <activity android:name=".scanner_page.ScanActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".rice_desease_activity.pengendalian.PengendalianTungroActivity" />
-        <activity android:name=".rice_desease_activity.pengendalian.PengendalianBusukPelepahActivity" />
-        <activity android:name=".rice_desease_activity.pengendalian.PengendalianBusukBatangActivity" />
-        <activity android:name=".rice_desease_activity.pengendalian.PengendalianBercakActivity" />
-        <activity android:name=".rice_desease_activity.pengendalian.PengendalianHawarActivity" />
-        <activity android:name=".rice_desease_activity.pengendalian.PengendalianBlastActivity" />
-        <activity android:name=".rice_desease_activity.PenyakitBusukPelepahActivity" />
-        <activity android:name=".rice_desease_activity.PenyakitTungroActivity" />
-        <activity android:name=".rice_desease_activity.PenyakitBusukBatangActivity" />
-        <activity android:name=".rice_desease_activity.PenyakitBercakActivity" />
-        <activity android:name=".rice_desease_activity.PenyakitBlastActivity" />
-        <activity android:name=".rice_desease_activity.PenyakitHawarActivity" />
-        <activity
-            android:name=".DaftarPenyakitActivity"
-            android:screenOrientation="fullSensor" />
-        <activity
-            android:name=".AboutAppActivity"
-            android:screenOrientation="fullSensor" />
-        <activity
-            android:name=".RegistrasiActivity"
-            android:screenOrientation="fullSensor" />
-        <activity
-            android:name=".SplashscreenActivity"
-            android:screenOrientation="fullSensor">
+        <activity android:name=".ui.HomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.PengendalianTungroActivity" />
+        <activity android:name=".ui.PengendalianBusukPelepahActivity" />
+        <activity android:name=".ui.PengendalianBusukBatangActivity" />
+        <activity android:name=".ui.PengendalianBercakActivity" />
+        <activity android:name=".ui.PengendalianHawarActivity" />
+        <activity android:name=".ui.PengendalianBlastActivity" />
+        <activity android:name=".ui.PenyakitBusukPelepahActivity" />
+        <activity android:name=".ui.PenyakitTungroActivity" />
+        <activity android:name=".ui.PenyakitBusukBatangActivity" />
+        <activity android:name=".ui.PenyakitBercakActivity" />
+        <activity android:name=".ui.PenyakitBlastActivity" />
+        <activity android:name=".ui.PenyakitHawarActivity" />
+        <activity
+            android:name=".ui.DaftarPenyakitActivity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.AboutAppActivity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.RegistrasiActivity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.SplashscreenActivity"
+            android:screenOrientation="fullSensor"/>
+
     </application>
 
 </manifest>

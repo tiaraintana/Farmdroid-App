@@ -5,7 +5,7 @@
    android:background="@drawable/animation"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".rice_desease_activity.pengendalian.PengendalianBusukPelepahActivity">
+    tools:context=".ui.PengendalianBusukPelepahActivity">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">

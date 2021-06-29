@@ -1,4 +1,4 @@
-package com.example.system_login.rice_desease_activity;
+package com.example.system_login.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.system_login.rice_desease_activity.pengendalian.PengendalianBercakActivity;
 import com.example.system_login.R;
 
 public class PenyakitBercakActivity extends AppCompatActivity {

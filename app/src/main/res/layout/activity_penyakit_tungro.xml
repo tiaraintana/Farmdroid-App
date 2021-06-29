@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/animation"
-    tools:context=".rice_desease_activity.PenyakitTungroActivity">
+    tools:context=".ui.PenyakitTungroActivity">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">

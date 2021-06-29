@@ -1,4 +1,4 @@
-package com.example.system_login;
+package com.example.system_login.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,12 +7,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.system_login.rice_desease_activity.PenyakitBusukPelepahActivity;
-import com.example.system_login.rice_desease_activity.PenyakitBercakActivity;
-import com.example.system_login.rice_desease_activity.PenyakitBlastActivity;
-import com.example.system_login.rice_desease_activity.PenyakitBusukBatangActivity;
-import com.example.system_login.rice_desease_activity.PenyakitHawarActivity;
-import com.example.system_login.rice_desease_activity.PenyakitTungroActivity;
+import com.example.system_login.R;
 
 public class DaftarPenyakitActivity extends AppCompatActivity {
     TextView hawar;

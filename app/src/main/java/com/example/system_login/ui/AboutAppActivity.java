@@ -1,8 +1,10 @@
-package com.example.system_login;
+package com.example.system_login.ui;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.system_login.R;
 
 public class AboutAppActivity extends AppCompatActivity {
     @Override
