@@ -2,6 +2,11 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/INDEX.LIST'
+    }
+
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
@@ -15,7 +20,7 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -35,6 +40,7 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
     implementation 'com.android.support:appcompat-v7:29.0.0.0'
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
@@ -47,16 +53,25 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:17.2.0'
     implementation 'com.google.firebase:firebase-database:19.1.0'
 
-//    implementation('org.tensorflow:tensorflow-lite:0.0.0-nightly') { changing = true }
-//    implementation('org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly') { changing = true }
-//    implementation('org.tensorflow:tensorflow-lite-support:0.0.0-nightly') { changing = true }
+    //Tensorflow
+    //implementation('org.tensorflow:tensorflow-lite:0.0.0-nightly') { changing = true }
+    //implementation('org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly') { changing = true }
+    //implementation('org.tensorflow:tensorflow-lite-support:0.0.0-nightly') { changing = true }
 
     implementation 'com.rengwuxian.materialedittext:library:2.1.4'
 
+    //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.0.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.0.0'
 
+    //Circle ImageView
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Dialogflow
+    implementation 'com.google.cloud:google-cloud-dialogflow:2.1.0'
+    //implementation 'io.grpc:grpc-okhttp:1.30.0'
+
+    implementation 'com.android.support:multidex:1.0.3'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
