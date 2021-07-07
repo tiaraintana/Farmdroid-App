@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.LoginActivity" />
-        <activity android:name=".scanner_page.ScanActivity" />
+        <activity android:name=".ui.ScanActivity" />
         <activity android:name=".ui.HomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

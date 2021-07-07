@@ -1,7 +1,6 @@
-package com.example.system_login.scanner_page;
+package com.example.system_login.ui;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -21,15 +20,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.system_login.ui.DaftarPenyakitActivity;
 import com.example.system_login.R;
-import com.example.system_login.model.ResponseApi;
-import com.example.system_login.network.APIClient;
-import com.example.system_login.network.APIService;
+import com.example.system_login.api.model.ResponseApi;
+import com.example.system_login.api.service.ApiClient;
+import com.example.system_login.api.service.ApiService;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.util.List;
 import java.util.Objects;
 
 import okhttp3.MediaType;
@@ -38,6 +35,7 @@ import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import retrofit2.Retrofit;
 
 @SuppressWarnings("deprecation")
 public class ScanActivity extends AppCompatActivity {
@@ -59,7 +57,7 @@ public class ScanActivity extends AppCompatActivity {
         detect = findViewById(R.id.detect);
         daftar_penyakit = findViewById(R.id.daftar_penyakit);
 
-        if(ContextCompat.checkSelfPermission(ScanActivity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
+        if (ContextCompat.checkSelfPermission(ScanActivity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(ScanActivity.this, new String[]{
                     Manifest.permission.CAMERA
             }, 100);
@@ -78,10 +76,11 @@ public class ScanActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (capturedPhoto != null) {
                     //TODO: MASUKKAN KODINGAN API GCP DISINI
-                    uploadFile();
+                    uploadFile2();
 //                    httpUpload();
+                } else {
+                    Toast.makeText(ScanActivity.this, "Silahkan Ambil Gambar", Toast.LENGTH_SHORT).show();
                 }
-                Toast.makeText(ScanActivity.this, "Silahkan Ambil Gambar", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -94,21 +93,7 @@ public class ScanActivity extends AppCompatActivity {
         });
     }
 
-//    private void httpUpload() {
-//        HttpClient httpclient = new DefaultHttpClient();
-//        HttpPost httppost = new HttpPost("LINK TO SERVER");
-//
-//        MultipartEntity mpEntity = new MultipartEntity(HttpMultipartMode.BROWSER_COMPATIBLE);
-//        if (filePath != null) {
-//            File file = new File(filePath);
-//            Log.d("EDIT USER PROFILE", "UPLOAD: file length = " + file.length());
-//            Log.d("EDIT USER PROFILE", "UPLOAD: file exist = " + file.exists());
-//            mpEntity.addPart("avatar", new FileBody(file, "application/octet"));
-//        }
-//
-//        httppost.setEntity(mpEntity);
-//        HttpResponse response = httpclient.execute(httppost);
-//    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -116,13 +101,9 @@ public class ScanActivity extends AppCompatActivity {
         if (requestCode == 100) {
             try {
                 capturedPhoto = (Bitmap) data.getExtras().get("data");
-                
                 imageView.setImageBitmap(capturedPhoto);
-                
                 imageUri = getImageUri(getApplicationContext(), capturedPhoto);
-                Log.d("IMAGEURI", imageUri.toString());
-
-                imagePath = getPath(imageUri);
+                imagePath = getImagePath(imageUri);
 //                captureimage = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -130,7 +111,7 @@ public class ScanActivity extends AppCompatActivity {
         }
     }
 
-    public String getPath(Uri uri) {
+    public String getImagePath(Uri uri) {
         String[] projection = {MediaStore.MediaColumns.DATA};
         Cursor cursor = managedQuery(uri, projection, null, null, null);
         int column_index = cursor
@@ -147,34 +128,58 @@ public class ScanActivity extends AppCompatActivity {
         return Uri.parse(path);
     }
 
-    void setLabel(List<String> entries) {
-        for (String entry : entries) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(ScanActivity.this);
-            builder.setMessage("Classified as: " + entry)
-                    .setNegativeButton("Retry", null).create().show();
-        }
-    }
+//    void setLabel(List<String> entries) {
+//        for (String entry : entries) {
+//            AlertDialog.Builder builder = new AlertDialog.Builder(ScanActivity.this);
+//            builder.setMessage("Classified as: " + entry)
+//                    .setNegativeButton("Retry", null).create().show();
+//        }
+//    }
 
     private void uploadFile() {
-        File file = new File(Objects.requireNonNull(imageUri.getPath()));
-
-        RequestBody requestFile = RequestBody.create(MediaType.parse(getContentResolver().getType(imageUri)), file);
-
-        MultipartBody.Part body = MultipartBody.Part.createFormData("file", file.getName(), requestFile);
-
-        APIService getResponse = APIClient.getInstance().create(APIService.class);
-
-        Call<ResponseApi> call = getResponse.upload(body);
+        File file = new File(Objects.requireNonNull(imagePath));
+        Retrofit retrofit = ApiClient.getRetrofit();
+        RequestBody requestBody = RequestBody.create(MediaType.parse(getContentResolver().getType(imageUri)), file);
+        MultipartBody.Part body = MultipartBody.Part.createFormData("file", file.getName(), requestBody);
+        ApiService apiService = retrofit.create(ApiService.class);
+        Call<ResponseApi> call = apiService.uploadImage(body);
         call.enqueue(new Callback<ResponseApi>() {
             @Override
             public void onResponse(Call<ResponseApi> call, Response<ResponseApi> response) {
                 ResponseApi apiResponse = response.body();
                 Toast.makeText(ScanActivity.this, apiResponse.getPred(), Toast.LENGTH_SHORT).show();
+                Log.d("IMAGEURI", apiResponse.getPred());
             }
 
             @Override
             public void onFailure(Call<ResponseApi> call, Throwable t) {
-                Toast.makeText(ScanActivity.this, "GAGAL :(" + t.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ScanActivity.this, "GAGAL :(\n" + t.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.d("IMAGEURI", t.getMessage());
+            }
+        });
+    }
+
+    private void uploadFile2() {
+        File file = new File(imagePath);
+
+        RequestBody requestFile = RequestBody.create(MediaType.parse("multipart/form/data"), file);
+        MultipartBody.Part body = MultipartBody.Part.createFormData("file", file.getName(), requestFile);
+
+        Retrofit retrofit = ApiClient.getRetrofit();
+        ApiService apiService = retrofit.create(ApiService.class);
+
+        Call<ResponseApi> call = apiService.uploadImage(body);
+        call.enqueue(new Callback<ResponseApi>() {
+            @Override
+            public void onResponse(Call<ResponseApi> call, Response<ResponseApi> response) {
+                ResponseApi apiResponse = response.body();
+                Toast.makeText(ScanActivity.this, apiResponse.getPred(), Toast.LENGTH_SHORT).show();
+                Log.d("IMAGEURI", apiResponse.getPred());
+            }
+
+            @Override
+            public void onFailure(Call<ResponseApi> call, Throwable t) {
+                Toast.makeText(ScanActivity.this, "GAGAL :(\n" + t.getMessage(), Toast.LENGTH_SHORT).show();
                 Log.d("IMAGEURI", t.getMessage());
             }
         });

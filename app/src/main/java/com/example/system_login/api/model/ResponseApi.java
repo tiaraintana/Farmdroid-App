@@ -1,4 +1,4 @@
-package com.example.system_login.model;
+package com.example.system_login.api.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
