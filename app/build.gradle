@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.chaquo.python'
 apply plugin: 'com.google.gms.google-services'
 
 android {
@@ -22,6 +23,23 @@ android {
         versionName "1.0"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
+
+        python{
+            buildPython "C:/Users/LENOVO/AppData/Local/Programs/Python/Python38-32/python.exe"
+            pip {
+                install "requests"
+            }
+        }
+
+        sourceSets {
+            main {
+                python.srcDir "src/main/python"
+            }
+        }
     }
 
     buildTypes {
