@@ -1,14 +1,15 @@
 package com.example.system_login.ui;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.system_login.R;
@@ -32,14 +33,14 @@ public class HomeActivity extends AppCompatActivity {
         berita.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                miniToast();
+                okDialog("Belum Berfungsi :)");
             }
         });
 
         catatan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                miniToast();
+                okDialog("Belum Berfungsi :)");
             }
         });
 
@@ -54,7 +55,7 @@ public class HomeActivity extends AppCompatActivity {
         konsultasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                miniToast();
+                okDialog("Belum Berfungsi :)");
             }
         });
 
@@ -75,9 +76,20 @@ public class HomeActivity extends AppCompatActivity {
         });
     }
 
-    private void miniToast() {
-        Toast t = Toast.makeText(HomeActivity.this, "Belum Berfungsi :)", Toast.LENGTH_SHORT);
-        t.show();
+    private void okDialog(String pesan) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Pesan");
+        builder.setMessage(pesan);
+        builder.setCancelable(true);
+        builder.setNeutralButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
 
     @Override

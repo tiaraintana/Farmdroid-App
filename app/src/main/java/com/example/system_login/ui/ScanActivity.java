@@ -1,11 +1,13 @@
 package com.example.system_login.ui;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -15,7 +17,6 @@ import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
@@ -70,9 +71,9 @@ public class ScanActivity extends AppCompatActivity {
                 if (capturedPhoto != null) {
                     base64 = imageBitmapToBase64(capturedPhoto);
                     PyObject obj = pyObj.callAttr("main", base64);
-                    Toast.makeText(ScanActivity.this, obj.toString(), Toast.LENGTH_SHORT).show();
+                    okDialog(obj.toString());
                 } else {
-                    Toast.makeText(ScanActivity.this, "Silahkan Ambil Gambar", Toast.LENGTH_SHORT).show();
+                    okDialog("Silahkan Ambil Gambar");
                 }
             }
         });
@@ -105,5 +106,21 @@ public class ScanActivity extends AppCompatActivity {
         byte[] byteArray = byteArrayOutputStream.toByteArray();
 
         return Base64.encodeToString(byteArray, Base64.DEFAULT);
+    }
+
+    private void okDialog(String pesan) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Pesan");
+        builder.setMessage(pesan);
+        builder.setCancelable(true);
+        builder.setNeutralButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
 }
