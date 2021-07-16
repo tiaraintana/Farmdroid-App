@@ -77,7 +77,7 @@ public class ChatbotActivity extends AppCompatActivity implements BotReply {
 
     private void setUpBot() {
         try {
-            InputStream stream = this.getResources().openRawResource(R.raw.credential);
+            InputStream stream = this.getResources().openRawResource(R.raw.credential_file);
             GoogleCredentials credentials = GoogleCredentials.fromStream(stream)
                     .createScoped(Lists.newArrayList("https://www.googleapis.com/auth/cloud-platform"));
             String projectId = ((ServiceAccountCredentials) credentials).getProjectId();

@@ -12,9 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.ChatbotActivity">
 
-        </activity>
+        <activity android:name="com.tyagiabhinav.dialogflowchatlibrary.ChatbotActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
         <activity android:name=".ui.LoginActivity" />
         <activity android:name=".ui.ScanActivity" />
         <activity android:name=".ui.HomeActivity">

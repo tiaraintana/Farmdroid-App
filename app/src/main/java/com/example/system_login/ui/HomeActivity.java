@@ -15,6 +15,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.system_login.R;
 import com.google.firebase.auth.FirebaseAuth;
 
+import com.tyagiabhinav.dialogflowchatlibrary.Chatbot;
+import com.tyagiabhinav.dialogflowchatlibrary.ChatbotActivity;
+import com.tyagiabhinav.dialogflowchatlibrary.ChatbotSettings;
+import com.tyagiabhinav.dialogflowchatlibrary.DialogflowCredentials;
+
+import java.util.UUID;
+
 public class HomeActivity extends AppCompatActivity {
     ImageView daftarPenyakit, tentangAplikasi, berita, scanner, catatan, konsultasi;
 
@@ -47,33 +54,45 @@ public class HomeActivity extends AppCompatActivity {
         daftarPenyakit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, DaftarPenyakitActivity.class);
-                startActivity(intent);
+                openDaftarPenyakit();
             }
         });
 
         konsultasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                okDialog("Belum Berfungsi :)");
+                openChatbot();
             }
         });
 
         scanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, ScanActivity.class);
-                startActivity(intent);
+                openScanner();
             }
         });
 
         tentangAplikasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, AboutAppActivity.class);
-                startActivity(intent);
+                openAbout();
             }
         });
+    }
+
+    private void openDaftarPenyakit() {
+        Intent intent = new Intent(HomeActivity.this, DaftarPenyakitActivity.class);
+        startActivity(intent);
+    }
+
+    private void openAbout() {
+        Intent intent = new Intent(HomeActivity.this, AboutAppActivity.class);
+        startActivity(intent);
+    }
+
+    private void openScanner() {
+        Intent intent = new Intent(HomeActivity.this, ScanActivity.class);
+        startActivity(intent);
     }
 
     private void okDialog(String pesan) {
@@ -107,5 +126,19 @@ public class HomeActivity extends AppCompatActivity {
             return true;
         }
         return false;
+    }
+
+    private void openChatbot() {
+        DialogflowCredentials.getInstance().setInputStream(getResources().openRawResource(R.raw.credential_file));
+
+        ChatbotSettings.getInstance().setChatbot(new Chatbot.ChatbotBuilder().build());
+
+        Bundle bundle = new Bundle();
+        bundle.putString(ChatbotActivity.SESSION_ID, UUID.randomUUID().toString());
+
+        Intent intent = new Intent(HomeActivity.this, ChatbotActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_NO_HISTORY);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 }
